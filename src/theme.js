@@ -5,10 +5,15 @@ const theme = extendTheme({
     global: {
       body: {
         bg: 'white',
-        color: 'gray.800'
+        color: 'black'
       },
     },
   },
+  colors: {
+    primary: '#b29700',
+    secondary: '#3874cc',
+    accent: '#7d4ba6'
+  }
 })
 
 export default theme

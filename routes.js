@@ -1,18 +1,14 @@
 export default [
   {
     path: '/',
-    label: 'Home'
+    label: 'Accueil'
   },
   {
-    path: 'rooms',
-    label: 'Rooms'
+    path: 'chambres',
+    label: 'Chambres'
   },
   {
-    path: 'about',
-    label: 'About'
-  },
-  {
-    path: 'error',
-    label: 'Error'
-  },
+    path: 'nous-contacter',
+    label: 'Nous contacter'
+  }
 ]

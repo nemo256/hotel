@@ -1,19 +1,27 @@
-import {
-  Alert,
-  AlertIcon,
-  AlertTitle,
-  CloseButton
-} from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
+import Hero from '../components/accueil/Hero'
+import Services from '../components/accueil/Services'
 
-
-const Index = () => {
+export default function Index() {
   return (
-    <Alert status='success'>
-      <AlertIcon />
-      <AlertTitle mr={2}>Website successfully deployed!</AlertTitle>
-      <CloseButton position='absolute' right='8px' top='8px' />
-    </Alert>
+    <>
+      <Container
+        bg='tomato'
+        mt={16}
+        maxW='100%'
+        justify='center'
+        align='center'
+      >
+        <Hero />
+      </Container>
+      <Container
+        bg='teal'
+        maxW='100%'
+        justify='center'
+        align='center'
+      >
+        <Services />
+      </Container>
+    </>
   )
 }
-
-export default Index
