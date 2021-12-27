@@ -10,8 +10,12 @@ import {
   Spacer,
   useDisclosure,
 } from "@chakra-ui/react";
+
+// Icons
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { CgClose } from 'react-icons/cg'
+import { BsTelephoneOutbound } from 'react-icons/bs'
+
 import Link from 'next/link'
 import routes from '../../../routes'
 
@@ -49,7 +53,7 @@ export default function Navbar() {
             boxSize={10}
             src='logo.png'
             mx={2}
-            mr={12}
+            mr={20}
             _focus={{  }}
           >
           </Image>
@@ -120,6 +124,7 @@ export default function Navbar() {
             fontWeight='bold'
             transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
             display={['none', 'none', 'flex', 'flex', 'flex']}
+            rightIcon={<BsTelephoneOutbound />}
             _hover={{
               bg: 'primary',
               textColor: 'black',
@@ -180,6 +185,7 @@ export default function Navbar() {
             fontWeight='bold'
             transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
             display={['flex', 'flex', 'none', 'none', 'none']}
+            rightIcon={<BsTelephoneOutbound />}
             _hover={{
               bg: 'primary',
               textColor: 'black',
