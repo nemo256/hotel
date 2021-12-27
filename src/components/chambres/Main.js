@@ -180,7 +180,6 @@ export default function Main() {
           <Flex
             direction='column-reverse'
             display={['flex', 'flex', 'none', 'none', 'none', 'none']}
-            w='100%'
           >
             <Fade left>
               <Flex direction='column' my={10}>
@@ -193,7 +192,7 @@ export default function Main() {
                 <Button
                   as='a'
                   my={2}
-                  mx={12}
+                  mx={4}
                   bg='none'
                   border='2px'
                   borderRadius={0}
