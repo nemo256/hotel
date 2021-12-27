@@ -14,7 +14,7 @@ export default function Header() {
           <Heading color='primary' size='xl' mb={2} align='center'>
             Chambres
           </Heading>
-          <Text color='primary' fontSize='2xl' align='center'>
+          <Text as='i' color='primary' fontSize='2xl' align='center'>
             Il n'y a qu'un patron: le client.
           </Text>
           <Text 
