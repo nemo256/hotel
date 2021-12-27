@@ -9,7 +9,7 @@ import {
 export default function Header() {
   return (
     <>
-      <Center h={300} mt={[16, 12, 0]}>
+      <Center h={300} mt={[16, 12, 0]} mx={2}>
         <Stack spacing={4}>
           <Heading color='primary' size='xl' mb={2} align='center'>
             Chambres
