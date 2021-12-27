@@ -17,6 +17,7 @@ export default function Layout({ children }) {
         w='100%'
         flexDirection='column'
         minH='100vh'
+        zIndex={0}
       >
         <Navbar />
         { children }

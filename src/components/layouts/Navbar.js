@@ -146,6 +146,7 @@ export default function Navbar() {
             as='nav'
             spacing={4}
             align='center'
+            opacity={0.9}
           >
           {routes.map((route, index) => (
             <Link 

@@ -8,7 +8,7 @@ import { Carousel } from 'react-responsive-carousel';
 export default function Hero() {
   return (
     <>
-      <Carousel emulateTouch={true} infiniteLoop={true} autoPlay={true} interval={4000}>
+      <Carousel emulateTouch={true} infiniteLoop={true} autoPlay={true} interval={4000} zIndex={0}>
         <Image src='defaultBcg.jpeg' alt='first image' />
         <Image src='defaultBcg.jpeg' alt='first image' />
         <Image src='defaultBcg.jpeg' alt='first image' />
