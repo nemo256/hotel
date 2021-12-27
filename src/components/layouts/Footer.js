@@ -12,6 +12,7 @@ export default function Footer() {
       as='footer'
       align='center'
       maxW='100%'
+      mt={16}
       py={2}
       px={2}
     >
