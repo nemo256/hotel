@@ -179,46 +179,47 @@ export default function Main() {
               }
             </Center>
           </Flex>
-          <Flex
-            direction='column-reverse'
-            display={['flex', 'flex', 'none', 'none', 'none', 'none']}
-          >
-            <Fade left>
-              <Flex direction='column' my={10} maxW='100%'>
-                <Text color='primary' fontSize='xl' align='center' my={1}>
-                  {room.title}
-                </Text>
-                <Text align='center' my={2}>
-                  {room.description}
-                </Text>
-                <Button
-                  as='a'
-                  my={2}
-                  mx={12}
-                  bg='none'
-                  border='2px'
-                  borderRadius={0}
-                  fontWeight='bold'
-                  transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
-                  _hover={{
-                    bg: 'primary',
-                    textColor: 'black',
-                    fontWeight: 'extrabold'
-                  }}
-                  _active={{
-                    bg: 'primary',
-                    transform: 'scale(0.98)',
-                  }}
-                  _focus={{  }}
-                >
-                  Découvrir chambre {room.title}
-                </Button>
-              </Flex>
-            </Fade>
-            <Fade right>
-              <Image src={room.src} />
-            </Fade>
-          </Flex>
+          {/* <Flex */}
+          {/*   direction='column-reverse' */}
+          {/*   display={['flex', 'flex', 'none', 'none', 'none', 'none']} */}
+          {/*   maxW='100%' */}
+          {/* > */}
+          {/*   <Fade left> */}
+          {/*     <Flex direction='column' my={10} maxW='100%'> */}
+          {/*       <Text color='primary' fontSize='xl' align='center' my={1}> */}
+          {/*         {room.title} */}
+          {/*       </Text> */}
+          {/*       <Text align='center' my={2}> */}
+          {/*         {room.description} */}
+          {/*       </Text> */}
+          {/*       <Button */}
+          {/*         as='a' */}
+          {/*         my={2} */}
+          {/*         mx={12} */}
+          {/*         bg='none' */}
+          {/*         border='2px' */}
+          {/*         borderRadius={0} */}
+          {/*         fontWeight='bold' */}
+          {/*         transition='all 0.2s cubic-bezier(.08,.52,.52,1)' */}
+          {/*         _hover={{ */}
+          {/*           bg: 'primary', */}
+          {/*           textColor: 'black', */}
+          {/*           fontWeight: 'extrabold' */}
+          {/*         }} */}
+          {/*         _active={{ */}
+          {/*           bg: 'primary', */}
+          {/*           transform: 'scale(0.98)', */}
+          {/*         }} */}
+          {/*         _focus={{  }} */}
+          {/*       > */}
+          {/*         Découvrir chambre {room.title} */}
+          {/*       </Button> */}
+          {/*     </Flex> */}
+          {/*   </Fade> */}
+          {/*   <Fade right> */}
+          {/*     <Image src={room.src} /> */}
+          {/*   </Fade> */}
+          {/* </Flex> */}
           </>
         ))}
       </Flex>
