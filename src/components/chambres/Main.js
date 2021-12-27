@@ -56,11 +56,11 @@ export default function Main() {
             <Parallax
               bgImage='./brownRoom.jpg'
               bgImageAlt='Brown Room'
-              strength={600}
+              strength={380}
             >
               <Center 
-                px={[10, 220, 340, 400, 500, 605]}
-                py={[10, 160, 200, 260, 280, 280]}
+                px={[12, 220, 340, 400, 500, 605]}
+                py={[16, 160, 200, 260, 280, 280]}
                 h={[260, 340, 480, 550, 600, 600]}
                 opacity={0.7}
               >
@@ -70,8 +70,9 @@ export default function Main() {
                   color='primary'
                   fontSize='xl'
                   align='center'
-                  px={[8, 10, 12, 16, 20]}
+                  px={[6, 8, 10, 12, 16]}
                   py={[6, 8, 10, 12, 16]}
+                  w='100%'
                 >
                   Bienvenue dans nos chambres
                 </Text>
