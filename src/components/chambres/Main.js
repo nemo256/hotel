@@ -46,6 +46,7 @@ export default function Main() {
         mt={[16, 12, 10, 8, 6]}
         mb={[6, 8, 10, 12, 16]}
         direction='column'
+        zIndex={1}
       >
         <Center
           mt={[12, 10, 8]}
@@ -70,17 +71,11 @@ export default function Main() {
                 align='center'
                 px={10}
                 py={8}
-                opacity={1}
               >
                 Bienvenue dans nos chambres
               </Text>
             </Center>
           </Parallax>
-          {/* <Image */}
-          {/*   src='./brownRoom.jpg' alt='Brown Room' */}
-          {/*   mt={[12, 10, 8]} */}
-          {/*   mb={[8, 12, 16]} */}
-          {/* /> */}
         </Center>
         <Text 
           as='i'

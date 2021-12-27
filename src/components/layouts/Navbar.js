@@ -148,6 +148,7 @@ export default function Navbar() {
         mt={16}
         w='100%'
         position='fixed'
+        zIndex={10}
         as='nav'
         spacing={4}
         align='center'
