@@ -2,7 +2,6 @@ import {
   Flex,
   Center,
   Text,
-  Box,
   Button,
   Image,
   Spacer
@@ -10,6 +9,9 @@ import {
 
 // Reveal animation on room pictures
 import Fade from 'react-reveal/Bounce';
+
+// Parallax effect
+import { Parallax } from 'react-parallax'
 
 // Rooms data
 const rooms = [
@@ -45,13 +47,41 @@ export default function Main() {
         mb={[6, 8, 10, 12, 16]}
         direction='column'
       >
-        <Fade bottom>
-          <Image
-            src='./brownRoom.jpg' alt='Brown Room'
-            mt={[12, 10, 8]}
-            mb={[8, 12, 16]}
-          />
-        </Fade>
+        <Center
+          mt={[12, 10, 8]}
+          mb={[8, 12, 16]}
+        >
+          <Parallax
+            bgImage='./brownRoom.jpg'
+            bgImageAlt='Brown Room'
+            strength={600}
+          >
+            <Center 
+              px={[10, 220, 340, 400, 500, 605]}
+              py={[10, 160, 200, 260, 280, 280]}
+              h={[300, 340, 480, 550, 600, 600]}
+              opacity={0.7}
+            >
+              <Text 
+                as='i'
+                bg='gray.300'
+                color='primary'
+                fontSize='xl'
+                align='center'
+                px={10}
+                py={8}
+                opacity={1}
+              >
+                Bienvenue dans nos chambres
+              </Text>
+            </Center>
+          </Parallax>
+          {/* <Image */}
+          {/*   src='./brownRoom.jpg' alt='Brown Room' */}
+          {/*   mt={[12, 10, 8]} */}
+          {/*   mb={[8, 12, 16]} */}
+          {/* /> */}
+        </Center>
         <Text 
           as='i'
           noOfLines={2} 
@@ -63,7 +93,7 @@ export default function Main() {
           Séjour dans une chambre à Alger signé Hotel 21
         </Text>
       </Flex>
-      <Flex direction='column'>
+      <Flex direction='column' bg='gray.100'>
         {rooms.map((room) => (
           <Flex 
             direction={['column', 'row']}
