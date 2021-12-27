@@ -1,5 +1,6 @@
 import { Container } from '@chakra-ui/react'
 import Element from '../components/nous-contacter/Element'
+import Head from '../components/nous-contacter/Head'
 
 export default function Index() {
   return (
@@ -11,6 +12,7 @@ export default function Index() {
         justify='center'
         align='center'
       >
+          <Head/>
         <Element />
       </Container>
     </>
