@@ -6,7 +6,6 @@ export default function Chambres() {
   return (
     <>
       <Stack
-        bg='yellow'
         mt={16}
         maxW='100%'
         justify='center'
