@@ -182,10 +182,10 @@ export default function Main() {
           <Flex
             direction='column-reverse'
             display={['flex', 'flex', 'none', 'none', 'none', 'none']}
-            maxW='100%'
+            w='100%'
           >
             <Fade left>
-              <Flex direction='column' my={10} maxW='100%'>
+              <Flex direction='column' my={10}>
                 <Text color='primary' fontSize='xl' align='center' my={1}>
                   {room.title}
                 </Text>
@@ -217,7 +217,7 @@ export default function Main() {
               </Flex>
             </Fade>
             <Fade right>
-              <Image src={room.src} maxW='100%' w='100%'/>
+              <Image src={room.src} w='100%'/>
             </Fade>
           </Flex>
           </>
