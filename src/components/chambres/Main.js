@@ -52,33 +52,33 @@ export default function Main() {
           mt={[12, 10, 8]}
           mb={[8, 12, 16]}
         >
-          {/* <Fade bottom> */}
-          {/*   <Parallax */}
-          {/*     bgImage='./brownRoom.jpg' */}
-          {/*     bgImageAlt='Brown Room' */}
-          {/*     strength={380} */}
-          {/*   > */}
-          {/*     <Center */} 
-          {/*       px={[12, 220, 340, 400, 500, 605]} */}
-          {/*       py={[16, 160, 200, 260, 280, 280]} */}
-          {/*       h={[260, 340, 480, 550, 600, 600]} */}
-          {/*       opacity={0.7} */}
-          {/*     > */}
-          {/*       <Text */} 
-          {/*         as='i' */}
-          {/*         bg='gray.300' */}
-          {/*         color='primary' */}
-          {/*         fontSize='xl' */}
-          {/*         align='center' */}
-          {/*         px={[6, 8, 10, 12, 16]} */}
-          {/*         py={[6, 8, 10, 12, 16]} */}
-          {/*         w='100%' */}
-          {/*       > */}
-          {/*         Bienvenue dans nos chambres */}
-          {/*       </Text> */}
-          {/*     </Center> */}
-          {/*   </Parallax> */}
-          {/* </Fade> */}
+          <Fade bottom>
+            <Parallax
+              bgImage='./brownRoom.jpg'
+              bgImageAlt='Brown Room'
+              strength={380}
+            >
+              <Center 
+                px={[12, 220, 340, 400, 500, 605]}
+                py={[16, 160, 200, 260, 280, 280]}
+                h={[260, 340, 480, 550, 600, 600]}
+                opacity={0.7}
+              >
+                <Text 
+                  as='i'
+                  bg='gray.300'
+                  color='primary'
+                  fontSize='xl'
+                  align='center'
+                  px={[6, 8, 10, 12, 16]}
+                  py={[6, 8, 10, 12, 16]}
+                  w='100%'
+                >
+                  Bienvenue dans nos chambres
+                </Text>
+              </Center>
+            </Parallax>
+          </Fade>
         </Center>
         <Text 
           as='i'
@@ -102,15 +102,16 @@ export default function Main() {
               {room.id % 2 == 0 ? 
                 <Fade right>
                   <Flex direction='column'>
-                    <Text color='primary' fontSize='xl' align='center'>
+                    <Text color='primary' fontSize='xl' align='center' my={1}>
                       {room.title}
                     </Text>
-                    <Text align='center'>
+                    <Text align='center' my={2}>
                       {room.description}
                     </Text>
                     <Button
                       as='a'
-                      mt={4}
+                      my={2}
+                      mx={12}
                       bg='none'
                       border='2px'
                       borderRadius={0}
@@ -141,15 +142,16 @@ export default function Main() {
               {room.id % 2 != 0 ? 
                 <Fade left>
                   <Flex direction='column'>
-                    <Text color='primary' fontSize='xl' align='center'>
+                    <Text color='primary' fontSize='xl' align='center' my={2}>
                       {room.title}
                     </Text>
-                    <Text align='center'>
+                    <Text align='center' my={2}>
                       {room.description}
                     </Text>
                     <Button
                       as='a'
-                      mt={4}
+                      my={2}
+                      mx={12}
                       bg='none'
                       border='2px'
                       borderRadius={0}
@@ -182,16 +184,16 @@ export default function Main() {
             display={['flex', 'flex', 'none', 'none', 'none', 'none']}
           >
             <Fade left>
-              <Flex direction='column' my={16}>
-                <Text color='primary' fontSize='xl' align='center'>
+              <Flex direction='column' my={10} maxW='100%'>
+                <Text color='primary' fontSize='xl' align='center' my={1}>
                   {room.title}
                 </Text>
-                <Text align='center'>
+                <Text align='center' my={2}>
                   {room.description}
                 </Text>
                 <Button
                   as='a'
-                  mt={4}
+                  my={2}
                   mx={12}
                   bg='none'
                   border='2px'
