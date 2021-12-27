@@ -6,7 +6,7 @@ import {
 export default function Services() {
   return (
     <>
-      <Center h={400}>
+      <Center h={1000}>
         Services
       </Center>
     </>
