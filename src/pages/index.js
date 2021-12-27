@@ -9,7 +9,7 @@ export default function Index() {
         bg='tomato'
         mt={16}
         maxW='100%'
-        h={100}
+        h={[700, 600, 300]}
         justify='center'
         align='center'
       >
@@ -20,7 +20,6 @@ export default function Index() {
         maxW='100%'
         justify='center'
         align='center'
-        
       >
         <Services />
       </Stack>
