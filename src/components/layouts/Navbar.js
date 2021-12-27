@@ -156,7 +156,7 @@ export default function Navbar() {
         >
           <Button
             as='a'
-            py={8}
+            py={4}
             bg='none'
             w='100%'
             fontWeight='bold'

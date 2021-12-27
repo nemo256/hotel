@@ -41,8 +41,8 @@ export default function Main() {
   return (
     <>
       <Flex 
-        mt={[16, 12, 0]}
-        mb={[8, 10, 12]}
+        mt={[16, 12, 10, 8, 6]}
+        mb={[6, 8, 10, 12, 16]}
         direction='column'
       >
         <Fade bottom>
