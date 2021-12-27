@@ -212,7 +212,7 @@ export default function Main() {
                 </Button>
               </Flex>
             </Fade>
-            <Fade left>
+            <Fade right>
               <Image src={room.src} />
             </Fade>
           </Flex>
