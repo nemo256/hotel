@@ -217,7 +217,7 @@ export default function Main() {
               </Flex>
             </Fade>
             <Fade right>
-              <Image src={room.src} maxW='100%'/>
+              <Image src={room.src} maxW='100%' w='100%'/>
             </Fade>
           </Flex>
           </>
