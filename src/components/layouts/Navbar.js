@@ -61,6 +61,7 @@ export default function Navbar() {
           color='black'
           outline='none'
           variant='unstyled'
+          align='center'
           icon={ 
             isOpen ?
               <CgClose size={30} />
