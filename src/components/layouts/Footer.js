@@ -1,8 +1,15 @@
 import {
   Container,
+  Center,
   Text,
-  Link,
+  Stack,
+  Link
 } from '@chakra-ui/react'
+
+// Social links
+import Facebook from './links/Facebook'
+import Twitter from './links/Twitter'
+import Instagram from './links/Instagram'
 
 export default function Footer() {
   return (
@@ -16,23 +23,39 @@ export default function Footer() {
       py={2}
       px={2}
     >
-      <Text
-        py={4}
-        textAlign='center'
-      >
-        MIT License © 2021-Present
-        <Link 
-          as='a'
-          href='/'
-          outline='none'
-          color='primary'
-          fontWeight='bold'
-          px={2}
-        >
-          Hotel 21
-        </Link>
-        Version 0.0.1
-      </Text>
+      <Stack spacing={[2, 4]} align='center'>
+        <Stack spacing={[0, 6]} direction={['column', 'row']}>
+          <Center>
+            <Text>
+              Vous pouvez nous trouver à #Hotel21
+            </Text>
+          </Center>
+          <Stack
+            align={'center'}
+            justify={'center'}
+            direction={'row'}
+            spacing={[1, 1, 1, 1, 1, 1]}
+          >
+            <Facebook />
+            <Instagram />
+            <Twitter />
+          </Stack>
+        </Stack>
+        <Text pb={4} pt={2} textAlign='center'>
+          MIT License © 2021-Present
+          <Link 
+            as='a'
+            href='/'
+            outline='none'
+            color='primary'
+            fontWeight='bold'
+            px={2}
+          >
+            Hotel 21
+          </Link>
+          Version 0.0.1
+        </Text>
+      </Stack>
     </Container>
   )
 }
