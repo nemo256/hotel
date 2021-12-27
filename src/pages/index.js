@@ -1,11 +1,11 @@
-import { Container } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
 import Hero from '../components/accueil/Hero'
 import Services from '../components/accueil/Services'
 
 export default function Index() {
   return (
     <>
-      <Container
+      <Stack
         bg='tomato'
         mt={16}
         maxW='100%'
@@ -13,15 +13,15 @@ export default function Index() {
         align='center'
       >
         <Hero />
-      </Container>
-      <Container
+      </Stack>
+      <Stack
         bg='teal'
         maxW='100%'
         justify='center'
         align='center'
       >
         <Services />
-      </Container>
+      </Stack>
     </>
   )
 }

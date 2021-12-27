@@ -1,18 +1,20 @@
-import { Container } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
 import Header from '../components/chambres/Header'
+import Main from '../components/chambres/Main'
 
 export default function Chambres() {
   return (
     <>
-      <Container
-        bg='none'
+      <Stack
+        bg='yellow'
         mt={16}
         maxW='100%'
         justify='center'
         align='center'
       >
         <Header />
-      </Container>
+        <Main />
+      </Stack>
     </>
   )
 }
