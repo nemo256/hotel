@@ -30,6 +30,7 @@ export default function Navbar() {
       top={0}
       zIndex={10}
       display='flex'
+      opacity={0.9}
     >
       <Flex
         w='100%'
