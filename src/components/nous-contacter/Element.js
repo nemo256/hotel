@@ -1,4 +1,5 @@
 import {
+  Center,
   Box,
   Button,
   FormControl,
@@ -10,10 +11,11 @@ import {
 
 export default function Element() {
   return (
-    <>
+    <><>
+    <Center>
+     <Heading>Contact </Heading>
+    </Center>
     <Box my={8} textAlign='left'>
-          <Heading>Contact </Heading>
-
       <form>
  
         <FormControl>
@@ -41,7 +43,7 @@ export default function Element() {
       </form>
     </Box>
     
-    </>
+    </></>
   )
 }
 
