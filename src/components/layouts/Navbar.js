@@ -137,65 +137,65 @@ export default function Navbar() {
       </Flex>
     </HStack>
     {isOpen ? (
-          <Stack 
-            bg='white'
-            pb={10}
-            mt={16}
+      <Stack 
+        bg='white'
+        pb={10}
+        mt={16}
+        w='100%'
+        position='fixed'
+        as='nav'
+        spacing={4}
+        align='center'
+        opacity={0.9}
+      >
+      {routes.map((route, index) => (
+        <Link 
+          key={index}
+          href={route.path}
+          passHref
+        >
+          <Button
+            as='a'
+            py={8}
+            bg='none'
             w='100%'
-            position='fixed'
-            as='nav'
-            spacing={4}
-            align='center'
-            opacity={0.9}
+            fontWeight='bold'
+            onClick={onClose}
+            _focus={{  }}
           >
-          {routes.map((route, index) => (
-            <Link 
-              key={index}
-              href={route.path}
-              passHref
-            >
-              <Button
-                as='a'
-                py={8}
-                bg='none'
-                w='100%'
-                fontWeight='bold'
-                onClick={onClose}
-                _focus={{  }}
-              >
-                {route.label}
-              </Button>
-            </Link>
-          ))}
-            <Link 
-              href='tel:+213 23 100 101'
-              passHref
-              display={['flex', 'flex', 'none', 'none', 'none']}
-            >
-              <Button
-                as='a'
-                bg='none'
-                border='2px'
-                borderRadius={0}
-                fontWeight='bold'
-                transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
-                display={['flex', 'flex', 'none', 'none', 'none']}
-                _hover={{
-                  bg: 'primary',
-                  textColor: 'black',
-                  fontWeight: 'extrabold'
-                }}
-                _active={{
-                  bg: 'primary',
-                  transform: 'scale(0.98)',
-                }}
-                _focus={{  }}
-              >
-                Réserver
-              </Button>
-            </Link>
-          </Stack>
-        ) : null}
+            {route.label}
+          </Button>
+        </Link>
+      ))}
+        <Link 
+          href='tel:+213 23 100 101'
+          passHref
+          display={['flex', 'flex', 'none', 'none', 'none']}
+        >
+          <Button
+            as='a'
+            bg='none'
+            border='2px'
+            borderRadius={0}
+            fontWeight='bold'
+            transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
+            display={['flex', 'flex', 'none', 'none', 'none']}
+            _hover={{
+              bg: 'primary',
+              textColor: 'black',
+              fontWeight: 'extrabold'
+            }}
+            _active={{
+              bg: 'primary',
+              transform: 'scale(0.98)',
+            }}
+            _focus={{  }}
+          >
+            Réserver
+          </Button>
+        </Link>
+      </Stack>
+      ) : null}
     </>
   );
 };

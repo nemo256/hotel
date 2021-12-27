@@ -143,7 +143,7 @@ export default function Main() {
                 </Fade>
                   :
                 <Fade left>
-                  <Image zIndex={0} src={room.src} />
+                  <Image src={room.src} />
                 </Fade>
               }
             </Center>
