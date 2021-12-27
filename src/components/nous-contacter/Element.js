@@ -11,10 +11,10 @@ import {
 
 export default function Element() {
   return (
-    <>
+    <><>
     <Center>
      <Heading>Contact </Heading>
- 
+    </Center>
     <Box my={8} textAlign='left'>
       <form>
  
@@ -42,8 +42,8 @@ export default function Element() {
         
       </form>
     </Box>
-    </Center>
-    </>
+    
+    </></>
   )
 }
 
