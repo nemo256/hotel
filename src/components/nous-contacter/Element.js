@@ -13,7 +13,7 @@ export default function Element() {
   return (
     <><>
     <Center>
-     <Heading>Contact </Heading>
+     <Heading>Contactez-Nous </Heading>
     </Center>
     <Box my={8} textAlign='left'>
       <form>
