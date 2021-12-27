@@ -56,7 +56,7 @@ export default function Navbar() {
         <Spacer />
         <IconButton
           aria-label='Open Menu'
-          bgColor='none'
+          bg='none'
           color='black'
           outline='none'
           variant='unstyled'
@@ -164,7 +164,7 @@ export default function Navbar() {
             </Link>
           ))}
             <Link 
-              href='/'
+              href='tel:+213 23 100 101'
               passHref
               display={['flex', 'flex', 'none', 'none', 'none']}
             >
