@@ -6,7 +6,6 @@ export default function Index() {
   return (
     <>
       <Container
-        bg='coral'
         mt={16}
         maxW='100%'
         justify='center'
