@@ -1,3 +1,6 @@
+// Custom font
+import '@fontsource/open-sans/500.css'
+
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
 import Layout from '../components/layouts/Layout'
 

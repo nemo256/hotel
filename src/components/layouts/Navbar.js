@@ -78,6 +78,7 @@ export default function Navbar() {
         </IconButton>
         <HStack
           display={['none', 'none', 'flex', 'flex', 'flex']}
+          spacing={0}
         >
         {routes.map((route, index) => (
           <Link 
