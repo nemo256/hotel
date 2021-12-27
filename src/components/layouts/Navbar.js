@@ -22,13 +22,13 @@ export default function Navbar() {
   return (
     <>
     <HStack
+      bg='white'
       position='fixed'
       insetX={0}
       justify='center'
       p={3}
       top={0}
       zIndex={10}
-      opacity={0.9}
       display='flex'
     >
       <Flex
@@ -56,7 +56,7 @@ export default function Navbar() {
         <Spacer />
         <IconButton
           aria-label='Open Menu'
-          bgColor='white'
+          bgColor='none'
           color='black'
           outline='none'
           variant='unstyled'
@@ -134,31 +134,35 @@ export default function Navbar() {
       </Flex>
     </HStack>
     {isOpen ? (
-          <Box pb={4}>
-            <Stack 
-              as='nav'
-              spacing={4}
-              align='center'
+          <Stack 
+            bg='white'
+            pb={10}
+            mt={16}
+            w='100%'
+            position='fixed'
+            as='nav'
+            spacing={4}
+            align='center'
+          >
+          {routes.map((route, index) => (
+            <Link 
+              key={index}
+              href={route.path}
+              passHref
             >
-            {routes.map((route, index) => (
-              <Link 
-                key={index}
-                href={route.path}
-                passHref
+              <Button
+                as='a'
+                py={8}
+                bg='none'
+                w='100%'
+                fontWeight='bold'
+                onClick={onClose}
+                _focus={{  }}
               >
-                <Button
-                  as='a'
-                  py={8}
-                  bg='none'
-                  w='100%'
-                  fontWeight='bold'
-                  onClick={onClose}
-                  _focus={{  }}
-                >
-                  {route.label}
-                </Button>
-              </Link>
-            ))}
+                {route.label}
+              </Button>
+            </Link>
+          ))}
             <Link 
               href='/'
               passHref
@@ -186,8 +190,7 @@ export default function Navbar() {
                 Réserver
               </Button>
             </Link>
-            </Stack>
-          </Box>
+          </Stack>
         ) : null}
     </>
   );
