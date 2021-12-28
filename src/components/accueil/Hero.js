@@ -1,4 +1,6 @@
 import {
+  Flex,
+  Spacer,
   Box,
   IconButton,
   useBreakpointValue,
@@ -53,106 +55,111 @@ export default function Hero() {
       position='relative'
       height='600px'
       width='full'
-      overflow='hidden'>
+      overflow='hidden'
+    >
       {/* CSS files for react-slick */}
       <link
-        rel="stylesheet"
-        type="text/css"
-        charSet="UTF-8"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        rel='stylesheet'
+        type='text/css'
+        charSet='UTF-8'
+        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
       />
       <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        rel='stylesheet'
+        type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
       />
-      <IconButton
-        aria-label="left-arrow"
-        variant="ghost"
-        position="absolute"
-        left='0%'
-        top={['67%', '35%']}
-        p={[6, 8, 8, 8, 8, 8]}
-        mx={2}
-        zIndex={2}
-        opacity={0.7}
-        border='2px'
-        borderRadius='none'
-        _hover={{
-          bg: 'primary',
-          textColor: 'black',
-          fontWeight: 'extrabold'
-        }}
-        _active={{
-          bg: 'primary',
-          transform: 'scale(0.98)',
-        }}
-        _focus={{  }}
-        onClick={() => slider?.slickPrev()}>
-        <BiLeftArrowAlt size="40px" />
-      </IconButton>
-      <IconButton
-        aria-label="right-arrow"
-        variant="ghost"
-        position="absolute"
-        right='0%'
-        top={['67%', '35%']}
-        p={[6, 8, 8, 8, 8, 8]}
-        mx={2}
-        zIndex={2}
-        opacity={0.7}
-        border='2px'
-        borderRadius='none'
-        _hover={{
-          bg: 'primary',
-          textColor: 'black',
-          fontWeight: 'extrabold'
-        }}
-        _active={{
-          bg: 'primary',
-          transform: 'scale(0.98)',
-        }}
-        _focus={{  }}
-        onClick={() => slider?.slickNext()}>
-        <BiRightArrowAlt size="40px" />
-      </IconButton>
+      <Flex>
+        <IconButton
+          aria-label='left-arrow'
+          position='relative'
+          color='white'
+          top={[460, 280]}
+          p={[6, 8, 8, 8, 8, 8]}
+          mx={2}
+          zIndex={2}
+          opacity={0.7}
+          border='2px'
+          borderRadius='none'
+          _hover={{
+            bg: 'primary',
+            textColor: 'black',
+            fontWeight: 'extrabold'
+          }}
+          _active={{
+            bg: 'primary',
+            transform: 'scale(0.98)',
+          }}
+          _focus={{  }}
+          onClick={() => slider?.slickPrev()}
+        >
+          <BiLeftArrowAlt size='40px' />
+        </IconButton>
+        <Spacer />
+        <IconButton
+          aria-label='right-arrow'
+          position='relative'
+          color='white'
+          top={[460, 280]}
+          p={[6, 8, 8, 8, 8, 8]}
+          mx={2}
+          zIndex={2}
+          opacity={0.7}
+          border='2px'
+          borderRadius='none'
+          _hover={{
+            bg: 'primary',
+            textColor: 'black',
+            fontWeight: 'extrabold'
+          }}
+          _active={{
+            bg: 'primary',
+            transform: 'scale(0.98)',
+          }}
+          _focus={{  }}
+          onClick={() => slider?.slickNext()}
+        >
+          <BiRightArrowAlt size='40px' />
+        </IconButton>
+      </Flex>
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
           <Box
             key={index}
-            height={'md'}
-            position="relative"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-            backgroundImage={`url(${card.image})`}>
-              <Stack
-                spacing={6}
-                w='full'
-                maxW='full'
-                position='relative'
-                top='50%'
-                transform='translate(0, -50%)'
+            height='md'
+            position='relative'
+            backgroundPosition='center'
+            backgroundRepeat='no-repeat'
+            backgroundSize='cover'
+            backgroundImage={`url(${card.image})`}
+          >
+            <Stack
+              spacing={6}
+              w='full'
+              maxW='full'
+              position='relative'
+              top='50%'
+              transform='translate(0, -50%)'
+            >
+              <Stack 
+                align='center'
               >
-                <Stack 
-                  align='center'
+                <Heading 
+                  as='i' 
+                  color='white'
+                  fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
                 >
-                  <Heading 
-                    as='i' 
-                    color='white'
-                    fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-                  >
-                    {card.title}
-                  </Heading>
-                  <Text
-                    as='i'
-                    color='white'
-                    fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
-                  >
-                    {card.text}
-                  </Text>
-                </Stack>
+                  {card.title}
+                </Heading>
+                <Text
+                  as='i'
+                  color='white'
+                  fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
+                >
+                  {card.text}
+                </Text>
               </Stack>
+            </Stack>
           </Box>
         ))}
       </Slider>
