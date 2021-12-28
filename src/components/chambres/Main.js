@@ -88,6 +88,7 @@ export default function Main() {
           fontSize='2xl'
           align='center'
           mb={[8, 12, 16]}
+          mx={6}
         >
           Séjour dans une chambre à Alger signé Hotel 21
         </Text>
