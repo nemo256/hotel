@@ -9,10 +9,15 @@ import {
   Text,
   Container,
   Center,
-} from '@chakra-ui/react';
-import React, { useState } from 'react';
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
-import Slider from 'react-slick';
+} from '@chakra-ui/react'
+import React, { useState } from 'react'
+import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
+
+// React-slick for adding a carousel
+import Slider from 'react-slick'
+
+// React-reveal for text zoom animation
+import Zoom from 'react-reveal/Zoom'
 
 
 const settings = {
@@ -21,17 +26,14 @@ const settings = {
   fade: true,
   infinite: true,
   autoplay: true,
-  speed: 400,
-  autoplaySpeed: 5000,
+  speed: 300,
+  autoplaySpeed: 4000,
   slidesToShow: 1,
   slidesToScroll: 1,
-};
+}
 
 export default function Hero() {
   const [slider, setSlider] = useState(null)
-
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '40px' });
 
   const cards = [
     {
@@ -146,24 +148,26 @@ export default function Hero() {
               top='50%'
               transform='translate(0, -50%)'
             >
-              <Stack 
-                align='center'
-              >
-                <Heading 
-                  as='i' 
-                  color='white'
-                  fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+              <Zoom cascade>
+                <Stack 
+                  align='center'
                 >
-                  {card.title}
-                </Heading>
-                <Text
-                  as='i'
-                  color='white'
-                  fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
-                >
-                  {card.text}
-                </Text>
-              </Stack>
+                  <Heading 
+                    as='i' 
+                    color='white'
+                    fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+                  >
+                    {card.title}
+                  </Heading>
+                  <Text
+                    as='i'
+                    color='white'
+                    fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
+                  >
+                    {card.text}
+                  </Text>
+                </Stack>
+              </Zoom>
             </Stack>
           </Box>
         ))}
