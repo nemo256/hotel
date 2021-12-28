@@ -98,7 +98,7 @@ export default function Main() {
           >
             <Center w='100%'>
               {room.id % 2 == 0 ? 
-                <Fade right>
+                //{/* <Fade right> */}
                   <Flex direction='column'>
                     <Text color='primary' fontSize='xl' align='center' my={1}>
                       {room.title}
@@ -129,16 +129,16 @@ export default function Main() {
                       Découvrir chambre {room.title}
                     </Button>
                   </Flex>
-                </Fade>
+                // </Fade>
                   :
-                <Fade left>
+                // {/* <Fade left> */}
                   <Image src={room.src} />
-                </Fade>
+                // </Fade>
               }
             </Center>
             <Center w='100%'>
               {room.id % 2 != 0 ? 
-                <Fade left>
+                // {/* <Fade left> */}
                   <Flex direction='column'>
                     <Text color='primary' fontSize='xl' align='center' my={2}>
                       {room.title}
@@ -169,11 +169,11 @@ export default function Main() {
                       Découvrir chambre {room.title}
                     </Button>
                   </Flex>
-                </Fade>
+                // </Fade>
                   :
-                <Fade left>
+                // {/* <Fade left> */}
                   <Image src={room.src} />
-                </Fade>
+                // {/* </Fade> */}
               }
             </Center>
           </Flex>
@@ -181,7 +181,7 @@ export default function Main() {
             direction='column-reverse'
             display={['flex', 'flex', 'none', 'none', 'none', 'none']}
           >
-            <Fade left>
+            {/* <Fade left> */}
               <Flex direction='column' my={10}>
                 <Text color='primary' fontSize='xl' align='center' my={1}>
                   {room.title}
@@ -212,10 +212,10 @@ export default function Main() {
                   Découvrir chambre {room.title}
                 </Button>
               </Flex>
-            </Fade>
-            <Fade right>
+            {/* </Fade> */}
+            {/* <Fade right> */}
               <Image src={room.src} w='100%'/>
-            </Fade>
+            {/* </Fade> */}
           </Flex>
           </>
         ))}
