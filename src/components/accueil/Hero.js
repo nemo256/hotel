@@ -14,6 +14,7 @@ import React, { useState } from 'react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
 
+
 const settings = {
   dots: true,
   arrows: false,
@@ -63,12 +64,12 @@ export default function Hero() {
         rel='stylesheet'
         type='text/css'
         charSet='UTF-8'
-        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
+        href='./css/slick.min.css'
       />
       <link
         rel='stylesheet'
         type='text/css'
-        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
+        href='./css/slick-theme.min.css'
       />
       <Flex>
         <IconButton
