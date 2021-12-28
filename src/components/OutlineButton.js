@@ -12,7 +12,6 @@ export default function OutlineButton({ children, ...pageProps }) {
       transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
       display={pageProps.display ? pageProps.display : 'flex'}
       rightIcon={pageProps.rightIcon ? pageProps.rightIcon : 'none'}
-      onClick={pageProps.onClick ? pageProps.onClick : null}
       _hover={{
         bg: 'primary',
         textColor: 'black',

@@ -53,7 +53,7 @@ export default function Services() {
 
   return (
     <>
-      <Center h={300}  mt={[16, 12, 0]} mb={[16, 12, 0]} mx={2}>
+      <Center h={300}  mt={[12, 10, 0]} mb={[16, 12, 0]} mx={2}>
         <Stack spacing={4}>
           <Heading color='primary' size='xl' mb={2} align='center'>
             Services
