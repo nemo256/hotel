@@ -13,33 +13,33 @@ import Fade from 'react-reveal/Bounce';
 // Parallax effect
 import { Parallax } from 'react-parallax'
 
-// Rooms data
-const rooms = [
-  {
-    id: 1,
-    title: 'Single',
-    src: './room-1.jpeg',
-    description: 'Basic one bedroom and one bathroom',
-    link: ''
-  },
-  {
-    id: 2,
-    title: 'Double',
-    src: './room-4.jpeg',
-    description: 'Basic two bedrooms and one bathroom',
-    link: ''
-  },
-  {
-    id: 3,
-    title: 'Triple',
-    src: './room-8.jpeg',
-    description: 'VIP two bedrooms and two bathrooms',
-    link: ''
-  },
-]
-
 
 export default function Main() {
+  // Rooms data
+  const rooms = [
+    {
+      id: 1,
+      title: 'Single',
+      src: './room-1.jpeg',
+      description: 'Basic one bedroom and one bathroom',
+      link: ''
+    },
+    {
+      id: 2,
+      title: 'Double',
+      src: './room-4.jpeg',
+      description: 'Basic two bedrooms and one bathroom',
+      link: ''
+    },
+    {
+      id: 3,
+      title: 'Triple',
+      src: './room-8.jpeg',
+      description: 'VIP two bedrooms and two bathrooms',
+      link: ''
+    },
+  ]
+
   return (
     <>
       <Flex 

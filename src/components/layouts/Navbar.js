@@ -16,6 +16,9 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { CgClose } from 'react-icons/cg'
 import { BsTelephoneOutbound } from 'react-icons/bs'
 
+// Custom button
+import OutlineButton from '../../components/OutlineButton'
+
 import Link from 'next/link'
 import routes from '../../../routes'
 
@@ -116,28 +119,12 @@ export default function Navbar() {
           passHref
           display={['none', 'none', 'flex', 'flex', 'flex']}
         >
-          <Button
-            as='a'
-            bg='none'
-            border='2px'
-            borderRadius={0}
-            fontWeight='bold'
-            transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
+          <OutlineButton
             display={['none', 'none', 'flex', 'flex', 'flex']}
             rightIcon={<BsTelephoneOutbound />}
-            _hover={{
-              bg: 'primary',
-              textColor: 'black',
-              fontWeight: 'extrabold'
-            }}
-            _active={{
-              bg: 'primary',
-              transform: 'scale(0.98)',
-            }}
-            _focus={{  }}
           >
             Réserver
-          </Button>
+          </OutlineButton>
         </Link>
       </Flex>
     </HStack>
@@ -178,28 +165,12 @@ export default function Navbar() {
           passHref
           display={['flex', 'flex', 'none', 'none', 'none']}
         >
-          <Button
-            as='a'
-            bg='none'
-            border='2px'
-            borderRadius={0}
-            fontWeight='bold'
-            transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
+          <OutlineButton
             display={['flex', 'flex', 'none', 'none', 'none']}
             rightIcon={<BsTelephoneOutbound />}
-            _hover={{
-              bg: 'primary',
-              textColor: 'black',
-              fontWeight: 'extrabold'
-            }}
-            _active={{
-              bg: 'primary',
-              transform: 'scale(0.98)',
-            }}
-            _focus={{  }}
           >
             Réserver
-          </Button>
+          </OutlineButton>
         </Link>
       </Stack>
       ) : null}
