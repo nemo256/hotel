@@ -1,4 +1,4 @@
-import { Container,Stack } from '@chakra-ui/react'
+import {Flex,Stack ,Box} from '@chakra-ui/react'
 import Hero from '../components/accueil/Hero'
 import Services from '../components/accueil/Services'
 
@@ -6,22 +6,19 @@ export default function Index() {
   return (
     <>
       <Stack
-        bg='tomato'
         mt={16}
         maxW='100%'
-        h={[700, 600, 300]}
-        justify='center'
-        align='center'
+        direction='column'
+        zIndex={1}
+        bg='#priamry'
       >
+        <Box flex='1' width="100%" >
         <Hero />
-      </Stack>
-      <Stack
-        bg='teal'
-        maxW='100%'
-        justify='center'
-        align='center'
-      >
+        </Box>
+        <Box flex='1'  width="100%"  >
         <Services />
+        </Box>
+     
       </Stack>
     </>
   )
