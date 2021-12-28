@@ -14,6 +14,7 @@ import React, { useState } from 'react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
 
+
 const settings = {
   dots: true,
   arrows: false,
@@ -56,27 +57,28 @@ export default function Hero() {
       height='600px'
       width='full'
       overflow='hidden'
-      mt={[-10, -55, -70]}
+      mt={[-10, -42, -42]}
     >
       {/* CSS files for react-slick */}
       <link
         rel='stylesheet'
         type='text/css'
         charSet='UTF-8'
-        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
+        href='./css/slick.min.css'
       />
       <link
         rel='stylesheet'
         type='text/css'
-        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
+        href='./css/slick-theme.min.css'
       />
       <Flex>
         <IconButton
           aria-label='left-arrow'
           position='relative'
           color='white'
-          top={[425, 280]}
-          p={[4, 6, 6, 6, 6, 6]}
+          top={[425, 260]}
+          px={[4, 6, 6, 6, 6, 6]}
+          py={[2, 4, 4, 4, 4, 4]}
           mx={2}
           zIndex={2}
           opacity={0.7}
@@ -101,8 +103,9 @@ export default function Hero() {
           aria-label='right-arrow'
           position='relative'
           color='white'
-          top={[425, 280]}
-          p={[4, 4, 4, 4, 4, 4]}
+          top={[425, 260]}
+          px={[4, 6, 6, 6, 6, 6]}
+          py={[2, 4, 4, 4, 4, 4]}
           mx={2}
           zIndex={2}
           opacity={0.7}
