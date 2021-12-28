@@ -38,7 +38,8 @@ export default function Element() {
           <Textarea type='textarea' placeholder='Entrez votre message' />
         </FormControl>
  
-        <Button variantColor="blue" type="submit" mt={4}>Submit</Button>
+     <Button  variantColor="blue" type="submit" colorScheme='blue' mt={4} >Envoyer</Button>
+
         
       </form>
     </Box>
