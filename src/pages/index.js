@@ -11,10 +11,8 @@ export default function Index() {
         direction='column'
         zIndex={1}
       >
-         
-          <Hero />
-        
-          <Services />
+        <Hero />
+        <Services />
       </Stack>
     </>
   )

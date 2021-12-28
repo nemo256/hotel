@@ -16,7 +16,7 @@ import Slider from 'react-slick';
 
 
 const settings = {
-  dots: true,
+  dots: false,
   arrows: false,
   fade: true,
   infinite: true,
@@ -57,7 +57,8 @@ export default function Hero() {
       height='600px'
       width='full'
       overflow='hidden'
-      mt={[-10, -42, -42]}
+      mt={[-65, -65, -65]}
+      mb={[0, -65, -65]}
     >
       {/* CSS files for react-slick */}
       <link
@@ -168,6 +169,6 @@ export default function Hero() {
         ))}
       </Slider>
     </Box>
-  );
+  )
 }
 
