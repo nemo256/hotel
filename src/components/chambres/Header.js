@@ -15,7 +15,7 @@ export default function Header() {
             Chambres
           </Heading>
           <Text as='i' color='primary' fontSize='2xl' align='center'>
-            Il n'y a qu'un patron: le client.
+            Içi, vous êtes le patron...
           </Text>
           <Text 
             px={[0, 4, 8, 20, 40, 60]}
