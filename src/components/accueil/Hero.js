@@ -76,7 +76,7 @@ export default function Hero() {
           position='relative'
           color='white'
           top={[425, 280]}
-          p={[4, 6, 8, 8, 8, 8]}
+          p={[4, 6, 6, 6, 6, 6]}
           mx={2}
           zIndex={2}
           opacity={0.7}
@@ -102,7 +102,7 @@ export default function Hero() {
           position='relative'
           color='white'
           top={[425, 280]}
-          p={[4, 6, 8, 8, 8, 8]}
+          p={[4, 4, 4, 4, 4, 4]}
           mx={2}
           zIndex={2}
           opacity={0.7}

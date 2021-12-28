@@ -12,7 +12,7 @@ export default function Index() {
         zIndex={1}
       >
         <Hero />
-        {/* <Services /> */}
+        <Services />
       </Stack>
     </>
   )
