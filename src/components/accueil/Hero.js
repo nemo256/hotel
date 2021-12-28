@@ -75,7 +75,7 @@ export default function Hero() {
           aria-label='left-arrow'
           position='relative'
           color='white'
-          top={[425, 280]}
+          top={[425, 260]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
@@ -102,7 +102,7 @@ export default function Hero() {
           aria-label='right-arrow'
           position='relative'
           color='white'
-          top={[425, 280]}
+          top={[425, 260]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
