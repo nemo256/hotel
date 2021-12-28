@@ -168,6 +168,7 @@ export default function Navbar() {
           <OutlineButton
             display={['flex', 'flex', 'none', 'none', 'none']}
             rightIcon={<BsTelephoneOutbound />}
+            onClick='tel:+213 23 100 101'
           >
             Réserver
           </OutlineButton>
