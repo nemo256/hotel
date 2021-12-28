@@ -56,7 +56,7 @@ export default function Hero() {
       height='600px'
       width='full'
       overflow='hidden'
-      mt={[-10, -55, -70]}
+      mt={[-10, -42, -42]}
     >
       {/* CSS files for react-slick */}
       <link
@@ -76,7 +76,8 @@ export default function Hero() {
           position='relative'
           color='white'
           top={[425, 280]}
-          p={[4, 6, 6, 6, 6, 6]}
+          px={[4, 6, 6, 6, 6, 6]}
+          py={[2, 4, 4, 4, 4, 4]}
           mx={2}
           zIndex={2}
           opacity={0.7}
@@ -102,7 +103,8 @@ export default function Hero() {
           position='relative'
           color='white'
           top={[425, 280]}
-          p={[4, 4, 4, 4, 4, 4]}
+          px={[4, 6, 6, 6, 6, 6]}
+          py={[2, 4, 4, 4, 4, 4]}
           mx={2}
           zIndex={2}
           opacity={0.7}
