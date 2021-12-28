@@ -9,7 +9,6 @@ import {
 
 // Reveal animation on room pictures
 import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
 
 // Parallax effect
 import { Parallax } from 'react-parallax'
@@ -53,33 +52,31 @@ export default function Main() {
           mt={[12, 10, 8]}
           mb={[8, 12, 16]}
         >
-          <Bounce bottom>
-            <Parallax
-              bgImage='./brownRoom.jpg'
-              bgImageAlt='Brown Room'
-              strength={380}
+          <Parallax
+            bgImage='./brownRoom.jpg'
+            bgImageAlt='Brown Room'
+            strength={380}
+          >
+            <Center 
+              px={[12, 220, 340, 400, 500, 605]}
+              py={[16, 160, 200, 260, 280, 280]}
+              h={[260, 340, 480, 550, 600, 600]}
+              opacity={0.7}
             >
-              <Center 
-                px={[12, 220, 340, 400, 500, 605]}
-                py={[16, 160, 200, 260, 280, 280]}
-                h={[260, 340, 480, 550, 600, 600]}
-                opacity={0.7}
+              <Text 
+                as='i'
+                bg='gray.300'
+                color='primary'
+                fontSize='xl'
+                align='center'
+                px={[6, 8, 10, 12, 16]}
+                py={[6, 8, 10, 12, 16]}
+                w='100%'
               >
-                <Text 
-                  as='i'
-                  bg='gray.300'
-                  color='primary'
-                  fontSize='xl'
-                  align='center'
-                  px={[6, 8, 10, 12, 16]}
-                  py={[6, 8, 10, 12, 16]}
-                  w='100%'
-                >
-                  Bienvenue dans nos chambres
-                </Text>
-              </Center>
-            </Parallax>
-          </Bounce>
+                Bienvenue dans nos chambres
+              </Text>
+            </Center>
+          </Parallax>
         </Center>
         <Text 
           as='i'
