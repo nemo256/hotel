@@ -4,8 +4,8 @@ import { Button } from '@chakra-ui/react'
 export default function OutlineButton({ children, ...pageProps }) {
   return (
     <Button
-      // as='a'
-      // bg='none'
+      as='a'
+      bg='none'
       border='2px'
       borderRadius={0}
       fontWeight='bold'

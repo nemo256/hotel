@@ -19,23 +19,24 @@ import Slider from 'react-slick'
 // React-reveal for text zoom animation
 import Zoom from 'react-reveal/Zoom'
 
-// Carousel settings
-const settings = {
-  dots: false,
-  arrows: false,
-  fade: true,
-  infinite: true,
-  autoplay: true,
-  speed: 300,
-  autoplaySpeed: 4000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-}
-
 
 export default function Hero() {
   const [slider, setSlider] = useState(null)
 
+  // Slider / Carousel settings
+  const settings = {
+    dots: false,
+    arrows: false,
+    fade: true,
+    infinite: true,
+    autoplay: true,
+    speed: 300,
+    autoplaySpeed: 4000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  }
+
+  // Carousel card entries
   const cards = [
     {
       title: 'Hotel 21 Alger',
