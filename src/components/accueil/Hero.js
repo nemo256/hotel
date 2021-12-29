@@ -19,7 +19,7 @@ import Slider from 'react-slick'
 // React-reveal for text zoom animation
 import Zoom from 'react-reveal/Zoom'
 
-
+// Carousel settings
 const settings = {
   dots: false,
   arrows: false,
@@ -31,6 +31,7 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
 }
+
 
 export default function Hero() {
   const [slider, setSlider] = useState(null)
@@ -56,11 +57,11 @@ export default function Hero() {
   return (
     <Box
       position='relative'
-      height='600px'
+      height={[400, 600]}
       width='full'
       overflow='hidden'
       mt={[-65, -65, -65]}
-      mb={[0, -65, -65]}
+      mb={[42, -65, -65]}
     >
       {/* CSS files for react-slick */}
       <link
@@ -79,7 +80,7 @@ export default function Hero() {
           aria-label='left-arrow'
           position='relative'
           color='white'
-          top={[425, 260]}
+          top={[300, 260]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
@@ -106,7 +107,7 @@ export default function Hero() {
           aria-label='right-arrow'
           position='relative'
           color='white'
-          top={[425, 260]}
+          top={[300, 260]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
@@ -133,7 +134,7 @@ export default function Hero() {
         {cards.map((card, index) => (
           <Box
             key={index}
-            height='md'
+            height={[400, 600]}
             position='relative'
             backgroundPosition='center'
             backgroundRepeat='no-repeat'
