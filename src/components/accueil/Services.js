@@ -106,7 +106,6 @@ export default function Services() {
             <Box
               maxW='sm'
               overflow='hidden'
-              borderWidth='2px'
               borderRadius='none' 
               bgColor='secondary' 
             >
