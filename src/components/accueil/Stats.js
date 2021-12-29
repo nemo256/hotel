@@ -27,7 +27,7 @@ function StatsCard(props) {
       mx={[4, 0]}
       mb={[2, 0]}
       shadow='xl'
-      border='2px'
+      border='1px'
       borderRadius='none'
       _hover={{
         transform: 'scale(1.09)',

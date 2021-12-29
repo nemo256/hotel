@@ -61,16 +61,16 @@ export default function Main() {
               px={[12, 220, 340, 400, 500, 605]}
               py={[16, 160, 200, 260, 280, 280]}
               h={[260, 340, 480, 550, 600, 600]}
-              opacity={0.7}
+              opacity={0.67}
             >
               <Text 
                 as='i'
-                bg='gray.300'
+                bg='secondary'
                 color='primary'
                 fontSize='xl'
                 align='center'
-                px={[6, 8, 10, 12, 16]}
-                py={[6, 8, 10, 12, 16]}
+                px={[6, 8, 8, 8, 8]}
+                py={[4, 6, 8, 8, 8]}
                 w='100%'
               >
                 Bienvenue dans nos chambres
@@ -90,7 +90,7 @@ export default function Main() {
           Séjour dans une chambre à Alger signé Hotel 21
         </Text>
       </Flex>
-      <Flex direction='column' bg='gray.100'>
+      <Flex direction='column' bg='secondary'>
         {rooms.map((room) => (
           <>
           <Flex 

@@ -106,13 +106,9 @@ export default function Services() {
             <Box
               maxW='sm'
               overflow='hidden'
-              borderWidth='0.5px'
+              borderWidth='2px'
               borderRadius='none' 
-              // borderColor='black'
-              bgColor='gray.200' 
-              _hover={{
-                cursor:'pointer'
-              }}
+              bgColor='secondary' 
             >
               <Center mt={7} mb={2}>   
                 <Text fontSize='5xl' color='primary'>
@@ -141,7 +137,7 @@ export default function Services() {
                     mt='2'
                     mb='2'
                     fontWeight='light'
-                    textColor='gray.600'
+                    textColor='gray.700'
                   >
                   {service.info}
                   </Box>

@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <>
       <Center h={300} mt={[12, 10, 0]} mx={2}>
-        <Stack spacing={4}>
+        <Stack spacing={4} w={['95%', '90%', '100%', '100%', '95%']}>
           <Heading color='primary' size='xl' mb={2} align='center'>
             Chambres
           </Heading>

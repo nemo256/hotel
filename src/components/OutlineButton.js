@@ -6,7 +6,7 @@ export default function OutlineButton({ children, ...pageProps }) {
     <Button
       as='a'
       bg='none'
-      border='2px'
+      border='1px'
       borderRadius={0}
       fontWeight='bold'
       transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
