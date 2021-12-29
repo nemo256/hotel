@@ -62,7 +62,7 @@ export default function Hero() {
       width='full'
       overflow='hidden'
       mt={[-65, -65, -65]}
-      mb={[16, -65, 0]}
+      mb={[16, 2, 0]}
     >
       {/* CSS files for react-slick */}
       <link
