@@ -92,7 +92,8 @@ export default function Hero() {
             fontWeight: 'extrabold'
           }}
           _active={{
-            transform: 'scale(0.98)',
+            bg: 'none',
+            transform: 'scale(0.98)'
           }}
           _focus={{  }}
           onClick={() => slider?.slickPrev()}
@@ -116,7 +117,8 @@ export default function Hero() {
             fontWeight: 'extrabold'
           }}
           _active={{
-            transform: 'scale(0.98)',
+            bg: 'none',
+            transform: 'scale(0.98)'
           }}
           _focus={{  }}
           onClick={() => slider?.slickNext()}
