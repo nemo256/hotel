@@ -1,6 +1,7 @@
 import { Stack, Box } from '@chakra-ui/react'
 import Hero from '../components/accueil/Hero'
 import Services from '../components/accueil/Services'
+import Stats from '../components/accueil/Stats'
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
     >
       <Hero />
       <Services />
+      <Stats />
     </Stack>
   )
 }

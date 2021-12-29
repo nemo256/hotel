@@ -80,7 +80,7 @@ export default function Main() {
         </Center>
         <Text 
           as='i'
-          noOfLines={2} 
+          noOfLines={3} 
           color='primary'
           fontSize='2xl'
           align='center'

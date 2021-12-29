@@ -121,7 +121,7 @@ export default function Navbar() {
         >
           <OutlineButton
             display={['none', 'none', 'flex', 'flex', 'flex']}
-            rightIcon={<BsTelephoneOutbound />}
+            rightIcon=<BsTelephoneOutbound />
           >
             Réserver
           </OutlineButton>
@@ -167,7 +167,7 @@ export default function Navbar() {
         >
           <OutlineButton
             display={['flex', 'flex', 'none', 'none', 'none']}
-            rightIcon={<BsTelephoneOutbound />}
+            rightIcon=<BsTelephoneOutbound />
           >
             Réserver
           </OutlineButton>
