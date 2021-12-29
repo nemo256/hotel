@@ -58,7 +58,7 @@ export default function Hero() {
   return (
     <Box
       position='relative'
-      height={[420, 500]}
+      height={[420, 450, 500]}
       width='full'
       overflow='hidden'
       mt={[-65, -65, -65]}
@@ -82,7 +82,7 @@ export default function Hero() {
           position='relative'
           color='white'
           bg='none'
-          top={[345, 250]}
+          top={[345, 225, 250]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
@@ -106,7 +106,7 @@ export default function Hero() {
           position='relative'
           color='white'
           bg='none'
-          top={[345, 250]}
+          top={[345, 225, 250]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
@@ -129,7 +129,7 @@ export default function Hero() {
         {cards.map((card, index) => (
           <Box
             key={index}
-            height={[420, 500]}
+            height={[420, 400, 500]}
             position='relative'
             backgroundPosition='center'
             backgroundRepeat='no-repeat'
@@ -141,7 +141,7 @@ export default function Hero() {
               w='full'
               maxW='full'
               position='relative'
-              top='45%'
+              top={[185, 200, 225]}
               transform='translate(0, -50%)'
             >
               <Zoom cascade>
