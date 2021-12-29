@@ -57,11 +57,11 @@ export default function Hero() {
   return (
     <Box
       position='relative'
-      height={[400, 600]}
+      height={[400, 500]}
       width='full'
       overflow='hidden'
       mt={[-65, -65, -65]}
-      mb={[42, -65, -65]}
+      mb={[16, -65, 0]}
     >
       {/* CSS files for react-slick */}
       <link
@@ -80,7 +80,7 @@ export default function Hero() {
           aria-label='left-arrow'
           position='relative'
           color='white'
-          top={[300, 260]}
+          top={[320, 250]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
@@ -107,7 +107,7 @@ export default function Hero() {
           aria-label='right-arrow'
           position='relative'
           color='white'
-          top={[300, 260]}
+          top={[320, 250]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
@@ -134,7 +134,7 @@ export default function Hero() {
         {cards.map((card, index) => (
           <Box
             key={index}
-            height={[400, 600]}
+            height={[400, 500]}
             position='relative'
             backgroundPosition='center'
             backgroundRepeat='no-repeat'
@@ -146,7 +146,7 @@ export default function Hero() {
               w='full'
               maxW='full'
               position='relative'
-              top='50%'
+              top='45%'
               transform='translate(0, -50%)'
             >
               <Zoom cascade>
