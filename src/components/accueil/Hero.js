@@ -81,7 +81,7 @@ export default function Hero() {
           position='relative'
           color='white'
           bg='none'
-          top={[330, 250]}
+          top={[345, 250]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
@@ -92,7 +92,6 @@ export default function Hero() {
             fontWeight: 'extrabold'
           }}
           _active={{
-            bg: 'none',
             transform: 'scale(0.98)'
           }}
           _focus={{  }}
@@ -106,7 +105,7 @@ export default function Hero() {
           position='relative'
           color='white'
           bg='none'
-          top={[330, 250]}
+          top={[345, 250]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
@@ -117,7 +116,6 @@ export default function Hero() {
             fontWeight: 'extrabold'
           }}
           _active={{
-            bg: 'none',
             transform: 'scale(0.98)'
           }}
           _focus={{  }}
