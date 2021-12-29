@@ -11,7 +11,7 @@ import {
   Center,
 } from '@chakra-ui/react'
 import React, { useState } from 'react'
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
+import { BiLeftArrow, BiRightArrow } from 'react-icons/bi'
 
 // React-slick for adding a carousel
 import Slider from 'react-slick'
@@ -57,7 +57,7 @@ export default function Hero() {
   return (
     <Box
       position='relative'
-      height={[400, 500]}
+      height={[420, 500]}
       width='full'
       overflow='hidden'
       mt={[-65, -65, -65]}
@@ -80,61 +80,55 @@ export default function Hero() {
           aria-label='left-arrow'
           position='relative'
           color='white'
-          top={[320, 250]}
+          bg='none'
+          top={[330, 250]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
           zIndex={2}
           opacity={0.7}
-          border='2px'
-          borderRadius='none'
           _hover={{
-            bg: 'primary',
-            textColor: 'black',
+            textColor: 'primary',
             fontWeight: 'extrabold'
           }}
           _active={{
-            bg: 'primary',
             transform: 'scale(0.98)',
           }}
           _focus={{  }}
           onClick={() => slider?.slickPrev()}
         >
-          <BiLeftArrowAlt size='40px' />
+          <BiLeftArrow size='40px' />
         </IconButton>
         <Spacer />
         <IconButton
           aria-label='right-arrow'
           position='relative'
           color='white'
-          top={[320, 250]}
+          bg='none'
+          top={[330, 250]}
           px={[4, 6, 6, 6, 6, 6]}
           py={[2, 4, 4, 4, 4, 4]}
           mx={2}
           zIndex={2}
           opacity={0.7}
-          border='2px'
-          borderRadius='none'
           _hover={{
-            bg: 'primary',
-            textColor: 'black',
+            textColor: 'primary',
             fontWeight: 'extrabold'
           }}
           _active={{
-            bg: 'primary',
             transform: 'scale(0.98)',
           }}
           _focus={{  }}
           onClick={() => slider?.slickNext()}
         >
-          <BiRightArrowAlt size='40px' />
+          <BiRightArrow size='40px' />
         </IconButton>
       </Flex>
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
           <Box
             key={index}
-            height={[400, 500]}
+            height={[420, 500]}
             position='relative'
             backgroundPosition='center'
             backgroundRepeat='no-repeat'
@@ -157,6 +151,12 @@ export default function Hero() {
                     as='i' 
                     color='white'
                     fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+                    _hover={{
+                      color: 'primary'
+                    }}
+                    _active={{
+                      color: 'primary'
+                    }}
                   >
                     {card.title}
                   </Heading>
