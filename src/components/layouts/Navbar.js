@@ -48,7 +48,7 @@ export default function Navbar() {
         <Tooltip
           hasArrow 
           label='Hotel 21'
-          bg='black'
+          bg='secondary'
           color='primary'
           placement='auto'
         >
