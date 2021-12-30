@@ -19,8 +19,8 @@ import {
               noOfLines={[8, 4, 3]} 
               align='center'
             >
-                Vous avez une question sur notre hôtel ? Nous sommes là pour vous aider ! 
-         Remplissez le formulaire ci-dessous ou contactez-nous directement au 7321983721613278.
+                Vous avez une question sur  Hôtel21 ? Nous sommes là pour vous aider ! 
+         Remplissez le formulaire ci-dessous ou contactez-nous directement au +213 21 00 52 10.
             </Text>
             <Text 
               px={[0, 4, 8, 20, 40, 60]}
