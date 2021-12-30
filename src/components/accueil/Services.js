@@ -114,11 +114,11 @@ export default function Services() {
                   {service.icon}
                 </Text>
               </Center>
-              <Box p='6'>    
+              <Box p={6}>
                 <Center>
                   <Box
                     as='h4'
-                    mb='2'
+                    mb={2}
                     fontWeight='bold'
                     lineHeight='tight'
                     isTruncated
@@ -130,11 +130,11 @@ export default function Services() {
                   {service.title}
                   </Box>
                 </Center>
-                <Box display='flex' mt='2' alignItems='center'>
+                <Box display='flex' mt={2} alignItems='center'>
                   <Box
                     as='h4'
-                    mt='2'
-                    mb='2'
+                    mt={2}
+                    mb={2}
                     fontWeight='light'
                     textColor='gray.700'
                   >
