@@ -136,7 +136,7 @@ export default function Services() {
                     mt={2}
                     mb={2}
                     fontWeight='light'
-                    textColor='gray.700'
+                    textColor='gray.600'
                   >
                   {service.info}
                   </Box>
