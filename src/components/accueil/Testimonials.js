@@ -99,7 +99,7 @@ export default function Testimonials() {
               </Flex>
               <Heading
                 color={'black'}
-                fontSize={{ base: 'xl', md: '1xl' }}
+                fontSize={['xl', '1xl']}
                 mt={{ base: 2, md: 0 }}
                 fontWeight='bold'
               >
@@ -107,8 +107,8 @@ export default function Testimonials() {
               </Heading>
               <Text
                 mt={2}
-                color={'gray.600'}
-                fontSize={{ base: 'md', md: 'md' }}
+                color='gray.600'
+                fontSize='md'
               >
                 {testimonial.text}
               </Text>
@@ -116,7 +116,7 @@ export default function Testimonials() {
                 <Link
                   as='b'
                   fontSize='xl'
-                  color={'primary'}
+                  color='primary'
                 >
                   {testimonial.name}
                 </Link>
