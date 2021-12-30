@@ -45,22 +45,29 @@ export default function Navbar() {
         justify='center'
         content='center'
       >
-        <Tooltip
-          hasArrow 
-          label='Hotel 21'
-          bg='secondary'
-          color='primary'
-          placement='auto'
-        >
-          <Image
-            boxSize={10}
-            src='logo.png'
-            mx={2}
-            mr={20}
-            _focus={{  }}
+        <Link href='/'>
+          <Button 
+            _focus={{
+              border: 'none'
+            }}
           >
-          </Image>
-        </Tooltip>
+            <Tooltip
+              hasArrow 
+              label='Hotel 21'
+              bg='secondary'
+              color='primary'
+              placement='auto'
+            >
+              <Image
+                boxSize={10}
+                src='logo.png'
+                mx={2}
+                mr={20}
+                _focus={{  }}
+              />
+            </Tooltip>
+          </Button>
+        </Link>
         <Spacer />
         <IconButton
           aria-label='Open Menu'
