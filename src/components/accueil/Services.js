@@ -85,9 +85,9 @@ export default function Services() {
             ml={[16, 12, 0]}
             mb={5}
           >
-            Bienvenue à Alger bienvenue à l’hôtel Alger 21.
+            Bienvenue à Alger bienvenue à l’hôtel 21.
             Au cœur d’Alger, vivez un séjour incomparable et authentique...
-            Moderne, chaleureux et raffiné, l’hôtel Alger 21 est un havre de détente.
+            Moderne, chaleureux et raffiné, l’hôtel 21 est un havre de détente.
             Niché dans les hauteurs algéroises d’où la baie d’Alger s’offre à vous dans un panorama unique et époustouflant, découvrez un large éventail d’activités et vivez une expérience hôtelière totale. 
           </Text>
         </Stack>
