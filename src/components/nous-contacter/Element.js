@@ -19,7 +19,7 @@ import {  MdOutlineEmail,MdPhone } from 'react-icons/md';
 export default function Element() {
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
-      <Flex p={8} flex={1} align={'center'} justify={'center'}>
+      <Flex p={8} flex={1} align={'center'} justify={'center'} borderWidth='1px' borderRadius='lg'>
         <Stack spacing={4} w={'full'} maxW={'md'}>
           <Heading fontSize={'2xl'}>Contactez-Nous</Heading>
           <HStack>
