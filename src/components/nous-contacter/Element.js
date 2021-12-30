@@ -1,50 +1,85 @@
 import {
-  Center,
+  Stack,
+  Flex,
+  Heading,
+  HStack,
   Box,
-  Button,
   FormControl,
   FormLabel,
   Input,
+  Button,
+  Image,
   Textarea,
-  Heading
-} from '@chakra-ui/react'
+  InputGroup,
+  InputLeftElement
+} from '@chakra-ui/react';
+import { BsPerson } from 'react-icons/bs';
+import {  MdOutlineEmail,MdPhone } from 'react-icons/md';
 
 export default function Element() {
   return (
-    <><>
-    <Center>
-     <Heading>Contactez-Nous </Heading>
-    </Center>
-    <Box my={8} textAlign='left'>
-      <form>
- 
-        <FormControl>
-          <FormLabel>Nom :
-          </FormLabel>
-          <Input type='text' placeholder='Entrez votre nom' />
-        </FormControl>
-        <FormControl>
-          <FormLabel>Email :
-           </FormLabel>
-          <Input type='email' placeholder='Entrez votre email' />
-        </FormControl>
-           <FormControl>
-          <FormLabel>Téléphone :
-          </FormLabel>
-          <Input type='number' placeholder='Entrez votre numéro de téléphone ' />
-        </FormControl>
-        <FormControl>
-          <FormLabel>Message :</FormLabel>
-          <Textarea type='textarea' placeholder='Entrez votre message' />
-        </FormControl>
- 
-     <Button  variantColor="blue" type="submit" colorScheme='blue' mt={4} >Envoyer</Button>
+    <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+      <Flex p={8} flex={1} align={'center'} justify={'center'}>
+        <Stack spacing={4} w={'full'} maxW={'md'}>
+          <Heading fontSize={'2xl'}>Contactez-Nous</Heading>
+          <HStack>
+              <Box>
+                <FormControl id="firstName" isRequired>
+                  <FormLabel>Nom</FormLabel>
+                  <InputGroup>
+                  <InputLeftElement children={<BsPerson />} />
+                  <Input type="text" placeholder="Saisir votre nom"/>
+                  </InputGroup>
+                </FormControl>
+              </Box>
+              <Box>
+                <FormControl id="lastName" isRequired >
+                  <FormLabel>Prénom</FormLabel>
+                  <InputGroup>
+                  <InputLeftElement children={<BsPerson />} />
+                  <Input type="text" placeholder="Saisir votre prénom" />
+                  </InputGroup>
+                </FormControl>
+              </Box>
+            </HStack>
+          <FormControl id="telephone" isRequired>
+            <FormLabel>Téléphone</FormLabel>
+            <InputGroup>
+            <InputLeftElement children={<MdPhone />} />
+            <Input type="telephone"  placeholder="Saisir votre numéro de téléphone"/>
+            </InputGroup>
+          </FormControl>
+          <FormControl id="email" isRequired>
+            <FormLabel>Email</FormLabel>
+            <InputGroup>
+            <InputLeftElement children={<MdOutlineEmail />} />
+            <Input type="email" placeholder="Saisir votre email"/>
+            </InputGroup>
+          </FormControl>
+          <FormControl isRequired>
+                    <FormLabel>Message</FormLabel>
 
-        
-      </form>
-    </Box>
-    
-    </></>
-  )
+                    <Textarea
+                      name="message"
+                      placeholder="Votre Message"
+                      rows={6}
+                      resize="none"
+                    />
+                  </FormControl>
+          <Stack spacing={6}>
+            <Button colorScheme={'blue'} variant={'solid'}>
+              Envoyer
+            </Button>
+          </Stack>
+        </Stack>
+      </Flex>
+      <Flex flex={1}>
+        <Image
+          alt={'Room Image'}
+          objectFit={'cover'}
+          src={'..//defaultBcg.jpg '}
+        />
+      </Flex>
+    </Stack>
+  );
 }
-
