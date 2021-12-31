@@ -4,11 +4,11 @@ export default [
     label: 'Accueil'
   },
   {
-    path: 'chambres',
+    path: '/chambres',
     label: 'Chambres'
   },
   {
-    path: 'nous-contacter',
-    label: 'Nous contacter'
+    path: '/contacter-nous',
+    label: 'Contacter-nous'
   }
 ]

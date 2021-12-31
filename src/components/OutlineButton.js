@@ -1,7 +1,7 @@
 import { Button } from '@chakra-ui/react'
 
 
-export default function OutlineButton({ children, ...pageProps }) {
+export default function OutlineButton({ children, ...props }) {
   return (
     <Button
       as='a'
@@ -10,16 +10,16 @@ export default function OutlineButton({ children, ...pageProps }) {
       borderRadius={0}
       fontWeight='bold'
       transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
-      px={pageProps.px ? pageProps.px : null}
-      py={pageProps.py ? pageProps.py : null}
-      mx={pageProps.mx ? pageProps.mx : null}
-      color={pageProps.color ? pageProps.color : null}
-      position={pageProps.position ? pageProps.position : null}
-      zIndex={pageProps.zIndex ? pageProps.zIndex : null}
-      opacity={pageProps.opacity ? pageProps.opacity : null}
-      display={pageProps.display ? pageProps.display : 'flex'}
-      rightIcon={pageProps.rightIcon ? pageProps.rightIcon : null}
-      onClick={pageProps.onClick ? pageProps.onClick : null}
+      px={props.px ? props.px : null}
+      py={props.py ? props.py : null}
+      mx={props.mx ? props.mx : null}
+      color={props.color ? props.color : null}
+      position={props.position ? props.position : null}
+      zIndex={props.zIndex ? props.zIndex : null}
+      opacity={props.opacity ? props.opacity : null}
+      display={props.display ? props.display : 'flex'}
+      rightIcon={props.rightIcon ? props.rightIcon : null}
+      onClick={props.onClick ? props.onClick : null}
       _hover={{
         bg: 'primary',
         textColor: 'black',

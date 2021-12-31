@@ -74,7 +74,7 @@ export default function Hero() {
       <link
         rel='stylesheet'
         type='text/css'
-        href='./css/slick-theme.min.css'
+        href='./css/slick.theme.min.css'
       />
       <Flex>
         <IconButton

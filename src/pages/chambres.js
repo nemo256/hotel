@@ -1,5 +1,4 @@
 import { Stack } from '@chakra-ui/react'
-import Header from '../components/chambres/Header'
 import Main from '../components/chambres/Main'
 
 export default function Chambres() {
@@ -10,7 +9,6 @@ export default function Chambres() {
       justify='center'
       align='center'
     >
-      <Header />
       <Main />
     </Stack>
   )

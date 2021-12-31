@@ -12,7 +12,7 @@ import {
         <Center h={300} mt={[16, 12, 0]} mx={2}>
           <Stack spacing={4}>
             <Heading color='primary' size='xl' mb={2} align='center'>
-            CONTACTEZ  HÔTEL21 
+              Contacter-nous
             </Heading>
             <Text 
               px={[0, 4, 8, 20, 40, 60]}

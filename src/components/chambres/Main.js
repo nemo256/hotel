@@ -13,6 +13,9 @@ import Fade from 'react-reveal/Fade';
 // Parallax effect
 import { Parallax } from 'react-parallax'
 
+// Custom Header component
+import Header from '../../components/Header'
+
 
 export default function Main() {
   // Rooms data
@@ -42,6 +45,13 @@ export default function Main() {
 
   return (
     <>
+      <Header>
+        {{
+           title: 'Chambres',
+           heading: 'Içi, vous êtes le patron...',
+           content: 'Spacieuses et décorées avec élégance, découvrez des chambres, parées de couleurs riches, propices à la relaxation. Équilibre raffiné du fonctionnel et du confort, les chambres de Hotel 21 se distinguent par l’accent mis sur le moindre détail, dans le seul but d’exalter votre sensation de bien-être.'
+        }}
+      </Header>
       <Flex 
         mt={[16, 12, 10, 8, 6]}
         mb={[6, 8, 10, 12, 16]}

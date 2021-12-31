@@ -7,10 +7,12 @@ import Testimonials from '../components/accueil/Testimonials'
 export default function Index() {
   return (
     <Stack
-      mt='90'
+      mt={90}
       maxW='100%'
       direction='column'
       zIndex={1}
+      justify='center'
+      align='center'
     >
       <Hero />
       <Services />

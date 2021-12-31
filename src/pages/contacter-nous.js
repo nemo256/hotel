@@ -1,6 +1,6 @@
 import { Container } from '@chakra-ui/react'
-import Element from '../components/nous-contacter/Element'
-import Head from '../components/nous-contacter/Head'
+import Element from '../components/contacter-nous/Element'
+import Head from '../components/contacter-nous/Head'
 
 export default function Index() {
   return (
