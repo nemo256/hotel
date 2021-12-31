@@ -23,6 +23,7 @@ export default function Header({ children, ...props }) {
         fontSize='2xl'
         mb={0}
         align='center'
+        display={children.title ? 'flex' : 'none'}
       >
         {children.title}
       </Text>
@@ -33,6 +34,7 @@ export default function Header({ children, ...props }) {
         fontWeight='bold'
         pb={2}
         align='center'
+        display={children.heading ? 'flex' : 'none'}
       >
         {children.heading}
       </Text>
@@ -41,6 +43,7 @@ export default function Header({ children, ...props }) {
         noOfLines={[10, 8, 4]} 
         color='gray.600'
         align='center'
+        display={children.content ? 'flex' : 'none'}
       >
         {children.content}
       </Text>

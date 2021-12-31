@@ -22,23 +22,23 @@ export default function Main() {
   const rooms = [
     {
       id: 1,
-      title: 'Single',
+      title: 'Simple',
       src: './room-1.jpeg',
-      description: 'Basic one bedroom and one bathroom',
+      description: 'Basic une chambre et une salle de bain',
       link: ''
     },
     {
       id: 2,
       title: 'Double',
       src: './room-4.jpeg',
-      description: 'Basic two bedrooms and one bathroom',
+      description: 'Deux chambres et une salle de bain de base',
       link: ''
     },
     {
       id: 3,
-      title: 'Triple',
+      title: 'Premium',
       src: './room-8.jpeg',
-      description: 'VIP two bedrooms and two bathrooms',
+      description: 'VIP deux chambres à coucher et deux salles de bain',
       link: ''
     },
   ]

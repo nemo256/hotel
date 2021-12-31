@@ -12,62 +12,68 @@ import {
   Textarea,
   InputGroup,
   InputLeftElement
-} from '@chakra-ui/react';
-import { BsPerson } from 'react-icons/bs';
-import {  MdOutlineEmail,MdPhone } from 'react-icons/md';
+} from '@chakra-ui/react'
+import { BsPerson } from 'react-icons/bs'
+import { MdOutlineEmail, MdPhone } from 'react-icons/md'
 
 export default function Element() {
   return (
-    <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
-      <Flex p={8} flex={1} align={'center'} justify={'center'} borderWidth='1px' borderRadius='lg'>
-        <Stack spacing={4} w={'full'} maxW={'md'}>
-          <Heading fontSize={'2xl'}>Contactez-Nous</Heading>
+    <Stack minH='100vh' direction={['column', 'row']}>
+      <Flex
+        p={8}
+        flex={1}
+        align='center'
+        justify='center'
+        borderWidth='1px'
+        borderRadius='lg'
+      >
+        <Stack spacing={4} w='full' maxW='md'>
+          <Heading fontSize='2xl' mb={4}>Envoyez-nous un message</Heading>
           <HStack>
               <Box>
-                <FormControl id="firstName" isRequired>
+                <FormControl id='firstName' isRequired>
                   <FormLabel>Nom</FormLabel>
                   <InputGroup>
-                  <InputLeftElement children={<BsPerson />} />
-                  <Input type="text" placeholder="Saisir votre nom"/>
+                    <InputLeftElement children=<BsPerson /> />
+                    <Input type='text' placeholder='Saisir votre nom' />
                   </InputGroup>
                 </FormControl>
               </Box>
               <Box>
-                <FormControl id="lastName" isRequired >
+                <FormControl id='lastName' isRequired >
                   <FormLabel>Prénom</FormLabel>
                   <InputGroup>
-                  <InputLeftElement children={<BsPerson />} />
-                  <Input type="text" placeholder="Saisir votre prénom" />
+                    <InputLeftElement children=<BsPerson /> />
+                    <Input type='text' placeholder='Saisir votre prénom' />
                   </InputGroup>
                 </FormControl>
               </Box>
             </HStack>
-          <FormControl id="telephone" isRequired>
+          <FormControl id='telephone' isRequired>
             <FormLabel>Téléphone</FormLabel>
             <InputGroup>
-            <InputLeftElement children={<MdPhone />} />
-            <Input type="telephone"  placeholder="Saisir votre numéro de téléphone"/>
+              <InputLeftElement children=<MdPhone /> />
+              <Input type='telephone'  placeholder='Saisir votre numéro de téléphone' />
             </InputGroup>
           </FormControl>
-          <FormControl id="email" isRequired>
+          <FormControl id='email' isRequired>
             <FormLabel>Email</FormLabel>
             <InputGroup>
-            <InputLeftElement children={<MdOutlineEmail />} />
-            <Input type="email" placeholder="Saisir votre email"/>
+              <InputLeftElement children=<MdOutlineEmail /> />
+              <Input type='email' placeholder='Saisir votre email'/>
             </InputGroup>
           </FormControl>
           <FormControl isRequired>
-                    <FormLabel>Message</FormLabel>
-
-                    <Textarea
-                      name="message"
-                      placeholder="Votre Message"
-                      rows={6}
-                      resize="none"
-                    />
-                  </FormControl>
+            <FormLabel>Message</FormLabel>
+            <Textarea
+              name='message'
+              placeholder='Votre Message'
+              rows={6}
+              resize='none'
+            />
+          </FormControl>
           <Stack spacing={6}>
-            <Button colorScheme={'blue'} variant={'solid'}>
+            <Button color='black'>
               Envoyer
             </Button>
           </Stack>
@@ -75,11 +81,11 @@ export default function Element() {
       </Flex>
       <Flex flex={1}>
         <Image
-          alt={'Room Image'}
-          objectFit={'cover'}
-          src={'..//defaultBcg.jpg '}
+          alt='Room Image'
+          objectFit='cover'
+          src='./defaultBcg.jpg'
         />
       </Flex>
     </Stack>
-  );
+  )
 }
