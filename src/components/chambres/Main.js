@@ -45,7 +45,7 @@ export default function Main() {
 
   return (
     <>
-      <Header h={[280, 220]}>
+      <Header h={[280, 260, 220]}>
         {{
            title: 'Chambres',
            heading: 'Içi, vous êtes le patron...',
