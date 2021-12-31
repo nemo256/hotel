@@ -18,12 +18,24 @@ export default function Header({ children, ...props }) {
       w={['95%', '90%', '100%', '100%', '95%']}
       alignItems='center'
     >
-      <Text color='primary' fontSize='2xl' mb={0} align='center'>
+      <Text
+        color='primary'
+        fontSize='2xl'
+        mb={0}
+        align='center'
+      >
         {children.title}
       </Text>
-      <Heading as={'b', 'i'} color='primary' size='lg' pb={2} align='center'>
+      <Text 
+        as='i'
+        color='primary'
+        fontSize='3xl'
+        fontWeight='bold'
+        pb={2}
+        align='center'
+      >
         {children.heading}
-      </Heading>
+      </Text>
       <Text 
         px={[0, 4, 8, 20, 40, 60]}
         noOfLines={[10, 8, 4]} 

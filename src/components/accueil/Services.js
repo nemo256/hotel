@@ -76,7 +76,7 @@ export default function Services() {
         {{
            title: 'Services',
            heading: 'Comfort, Elegence, Expérience et des émotions...',
-           content: 'Bienvenue à Alger bienvenue à l’hôtel 21 au cœur d’Alger, vivez un séjour incomparable et authentique, Moderne, chaleureux et raffiné. l’hôtel 21 est un havre de détente. Niché dans les hauteurs algéroises d’où la baie d’Alger s’offre à vous dans un panorama unique et époustouflant, découvrez un large éventail d’activités et vivez une expérience hôtelière totale.'
+           content: 'Bienvenue à Alger bienvenue à l’hôtel 21 au cœur d’Alger, vivez un séjour incomparable et authentique, Moderne, chaleureux et raffiné. l’hôtel 21 est un havre de détente. Découvrez un large éventail d’activités et vivez une expérience hôtelière totale.'
         }}
       </Header>
       <Center>           

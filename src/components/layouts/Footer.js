@@ -3,6 +3,7 @@ import {
   Center,
   Text,
   Stack,
+  Divider,
   Link
 } from '@chakra-ui/react'
 
@@ -20,9 +21,10 @@ export default function Footer() {
       align='center'
       maxW='100%'
       mt={16}
-      py={2}
+      py={1}
       px={2}
     >
+      <Divider mb={2}/>
       <Stack spacing={[2, 4]} align='center'>
         <Stack spacing={[0, 6]} direction={['column', 'row']}>
           <Center>
@@ -31,10 +33,10 @@ export default function Footer() {
             </Text>
           </Center>
           <Stack
-            align={'center'}
-            justify={'center'}
-            direction={'row'}
-            spacing={[1, 1, 1, 1, 1, 1]}
+            align='center'
+            justify='center'
+            direction='row'
+            spacing={1}
           >
             <Facebook />
             <Instagram />
@@ -53,7 +55,7 @@ export default function Footer() {
           >
             Hotel 21
           </Link>
-          Version 0.0.1
+          Version 0.0.2
         </Text>
       </Stack>
     </Container>

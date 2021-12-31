@@ -14,6 +14,9 @@ import {
 } from '@chakra-ui/react'
 import React from 'react'
 
+// Custom Header component
+import Header from '../../components/Header'
+
 
 export default function Testimonials() {
   // Testimonials data
@@ -23,58 +26,55 @@ export default function Testimonials() {
       name: 'Mohamed Boudraa',
       position: 'Full-Stack Developer',
       image: 'room-1.jpeg',
-      date: 'April 2017',
-      text:  'The hotel 21 is an excellent choice for anybody considering hosting their events there. Top level facilities and excellent staff make for a brilliant environment within which to operate.'
+      date: 'Decembre 2021',
+      text: 'J\'ai séjourné dans une douzaine d\'hôtels à alger. Celui-ci était en haut de la liste des meilleurs séjours/expériences jamais vécus.'
     },
     {
       id: 2,
       name: 'Amine Neggazi',
       position: 'Front-End Developer',
       image: 'room-1.jpeg',
-      date: 'April 2017',
-      text: 'The hotel 21 is an excellent choice for anybody considering hosting their events there. Top level facilities and excellent staff make for a brilliant environment within which to operate.'
+      date: 'Decembre 2021',
+      text: 'Le personnel de cette propriété est formidable! Ils font tout leur possible pour rendre votre séjour confortable.'
     },
     {
       id: 3,
       name:'Insaf Bakiri',
       position: 'UI/UX Designer',
       image:'room-1.jpeg',
-      date:'April 2017',
-      text: 'The hotel 21 is an excellent choice for anybody considering hosting their events there. Top level facilities and excellent staff make for a brilliant environment within which to operate.'
+      date:'Decembre 2021',
+      text: 'Les chambres étaient propres, très confortables, et le personnel était formidable.'
     }
   ]
 
   return (
     <>
-      <Center h={300} mt={[16, 12, 0]} mb={[16, 12, 0]} mx={2}>
-        <Stack 
-          spacing={4} 
-          mr={5} 
-          ml={5}
-        >
-          <Heading color='primary' size='xl' mb={2} align='center'>
-            Témoignage
-          </Heading>
-          <Text color='primary' fontSize='2xl' align='center'>
-            C'est une sorte d'avis ou d'opinion à notre sujet de la part de clients du monde entier
-          </Text>
-        </Stack>
-      </Center>
+      <Header
+        h={[380, 320, 300]}
+        py={[12, 16, 8, 20]}
+      >
+        {{
+           title: 'Les gens nous aiment',
+           heading: 'Vous êtes en bonne compagnie',
+           content: 'Découvrez pourquoi plus de 12 000 personnes séjournent dans notre hôtel avec le sourire aux lèvres.'
+        }}
+      </Header>
       <Center >
         <Grid
-          my={8}
+          mt={2}
+          mb={[0, -16, 0, 0, 0, 0]}
           mx={10} 
           maxW='1200px'
           templateRows={['repeat(2, 1fr)','repeat(3, 1fr)','repeat(2, 1fr)']}
           templateColumns={['repeat(1, 1fr)','repeat(2, 1fr)','repeat(4, 1fr)']}
-          gap={20}
+          gap={24}
         >
         {testimonials.map((testimonial, index) => (
           <>
             {testimonial.id == 3 && <Center />}
             <GridItem key={index}  h='100%' colSpan={2}>
               <Box 
-                mt={testimonial.id == 3 ? [-20, -80, 4, 2, 0] : 0}
+                mt={testimonial.id == 3 ? [-28, -80, 4, 2, 0] : 0}
                 py={4}
                 px={6}
                 bg='secondary'
@@ -106,7 +106,7 @@ export default function Testimonials() {
                   />
                 </Flex>
                 <Heading
-                  mt={[2, 0]}
+                  mt={[4, 2]}
                   color='black'
                   fontSize={['xl', '1xl']}
                   fontWeight='bold'
@@ -121,6 +121,7 @@ export default function Testimonials() {
                 >
                   {testimonial.text}
                 </Text>
+                <Spacer />
                 <Flex mt={4} alignItems='center'>
                   <Text
                     as='i'
