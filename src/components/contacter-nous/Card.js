@@ -155,7 +155,7 @@ export default function Card() {
                 placeholder='Votre Message'
                 rows={6}
                 resize='none'
-                borderWidth='0.5px'
+                border='1px'
                 borderColor='black'
                 borderRadius='none'
                 _placeholder={{ 
@@ -184,7 +184,7 @@ export default function Card() {
           justifyContent='center'
         >
           <Stack spacing={4} w='full' mt={[6, 8]}>
-            <Flex bg='red' h={[120, 240, 260, 280, 300]} justifyContent='center'>
+            <Flex p={4} h={[120, 240, 260, 280, 300]} justifyContent='center'>
               <svg 
                 x='0px'
                 y='0px'
@@ -273,7 +273,7 @@ export default function Card() {
                 _focus={{  }}
                 leftIcon={<MdOutlineEmail color='black' size='20px' />}
               >
-                hotel21@gmail.com
+                hotel21@mail.com
               </OutlineButton>
               <OutlineButton
                 size='md'
