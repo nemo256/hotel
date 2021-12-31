@@ -60,6 +60,7 @@ export default function Hero() {
       position='relative'
       height={[420, 450, 500]}
       width='full'
+      maxW='1200px'
       overflow='hidden'
       mt={[-65, -65, -65]}
       mb={[16, 2, 0]}

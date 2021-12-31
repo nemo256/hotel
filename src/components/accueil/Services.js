@@ -70,7 +70,7 @@ export default function Services() {
   return (
     <>
       <Header
-        h={[380, 360, 300]}
+        h={[420, 400, 300, 300, 280, 260]}
         py={[2, 4, 8, 10]}
       >
         {{

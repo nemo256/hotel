@@ -63,6 +63,7 @@ export default function Navbar() {
                 src='logo.png'
                 mx={2}
                 mr={20}
+                ml={-2}
                 _focus={{  }}
               />
             </Tooltip>
