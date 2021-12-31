@@ -1,14 +1,13 @@
 import {
-  chakra,
   Box,
   Image,
   Flex,
   Grid,
   GridItem,
-  useColorModeValue,
   Link,
   Center,
   Stack,
+  Spacer,
   Heading,
   Text,
   Icon
@@ -20,22 +19,28 @@ export default function Testimonials() {
   // Testimonials data
   const testimonials = [
     {
-      image:'room-1.jpeg',
-      name:'Mohamed Boudraa',
-      date:'April 2017',
-      text: ' The hotel 21 is an excellent choice for anybody considering hosting their events there. Top level facilities and excellent staff make for a brilliant environment within which to operate..'
+      id: 1,
+      name: 'Mohamed Boudraa',
+      position: 'Full-Stack Developer',
+      image: 'room-1.jpeg',
+      date: 'April 2017',
+      text:  'The hotel 21 is an excellent choice for anybody considering hosting their events there. Top level facilities and excellent staff make for a brilliant environment within which to operate.'
     },
     {
-      image:'room-1.jpeg',
-      name:'Amine Neggazi',
-      date:'April 2017',
-      text: ' The hotel 21 is an excellent choice for anybody considering hosting their events there. Top level facilities and excellent staff make for a brilliant environment within which to operate..'
+      id: 2,
+      name: 'Amine Neggazi',
+      position: 'Front-End Developer',
+      image: 'room-1.jpeg',
+      date: 'April 2017',
+      text: 'The hotel 21 is an excellent choice for anybody considering hosting their events there. Top level facilities and excellent staff make for a brilliant environment within which to operate.'
     },
     {
-      image:'room-1.jpeg',
+      id: 3,
       name:'Insaf Bakiri',
+      position: 'UI/UX Designer',
+      image:'room-1.jpeg',
       date:'April 2017',
-      text: ' The hotel 21 is an excellent choice for anybody considering hosting their events there. Top level facilities and excellent staff make for a brilliant environment within which to operate..'
+      text: 'The hotel 21 is an excellent choice for anybody considering hosting their events there. Top level facilities and excellent staff make for a brilliant environment within which to operate.'
     }
   ]
 
@@ -66,9 +71,8 @@ export default function Testimonials() {
         {testimonials.map((testimonial, index) => (
           <GridItem key={index}  h='100%' colSpan={2}>
             <Box 
-              mx='auto'
               py={4}
-              px={8}
+              px={6}
               bg='secondary'
               shadow='lg'
             >
@@ -98,28 +102,38 @@ export default function Testimonials() {
                 />
               </Flex>
               <Heading
-                color={'black'}
+                mt={[2, 0]}
+                color='black'
                 fontSize={['xl', '1xl']}
-                mt={{ base: 2, md: 0 }}
                 fontWeight='bold'
               >
                 {testimonial.date}
               </Heading>
               <Text
                 mt={2}
+                pb={2}
                 color='gray.600'
                 fontSize='md'
               >
                 {testimonial.text}
               </Text>
-              <Flex justifyContent='end' mt={4}>
-                <Link
+              <Flex mt={4} alignItems='center'>
+                <Text
+                  as='i'
+                  mr='20px'
+                  fontSize='9px'
+                  color='gray.500'
+                >
+                  {testimonial.position}
+                </Text>
+                <Spacer />
+                <Text
                   as='b'
-                  fontSize='xl'
+                  fontSize='lg'
                   color='primary'
                 >
                   {testimonial.name}
-                </Link>
+                </Text>
               </Flex>
             </Box>
           </GridItem>
