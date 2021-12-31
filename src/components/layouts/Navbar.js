@@ -16,7 +16,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { CgClose } from 'react-icons/cg'
 import { BsTelephoneOutbound } from 'react-icons/bs'
 
-// Custom button
+// Custom Button component
 import OutlineButton from '../../components/OutlineButton'
 
 import Link from 'next/link'
