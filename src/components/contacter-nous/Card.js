@@ -184,7 +184,7 @@ export default function Card() {
           justifyContent='center'
         >
           <Stack spacing={4} w='full' mt={[6, 8]}>
-            <Flex p={4} h={[120, 240, 260, 280, 300]} justifyContent='center'>
+            <Flex p={4} h={[220, 240, 260, 280, 300]} justifyContent='center'>
               <svg 
                 x='0px'
                 y='0px'
