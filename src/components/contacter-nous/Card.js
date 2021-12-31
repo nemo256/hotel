@@ -178,13 +178,13 @@ export default function Card() {
         </Flex>
         <Divider orientation={['horizontal', 'horizontal', 'vertical', 'vertical', 'vertical', 'vertical']} />
         <Flex
-          p={8}
+          p={[0, 0, 8, 8, 8, 8]}
           flex={1}
           justify='center'
           justifyContent='center'
         >
-          <Stack spacing={4} w='full' mt={[6, 8]}>
-            <Flex p={4} h={[220, 240, 260, 280, 300]} justifyContent='center'>
+          <Stack spacing={4} w='full' mt={[0, 8]}>
+            <Flex display={['none', 'none', 'flex', 'flex', 'flex', 'flex']} p={4} h={[220, 240, 260, 280, 300]} justifyContent='center'>
               <svg 
                 x='0px'
                 y='0px'
@@ -227,6 +227,12 @@ export default function Card() {
                 <rect x='238.932' y='426.476' width='34.134' height='85.334'/>
                 <rect x='290.132' y='187.543' width='17.067' height='51.2'/>
               </svg>
+            </Flex>
+            <Flex display={['flex', 'flex', 'none', 'none', 'none', 'none']} pb={4} justifyContent='center'>
+              <Image
+                boxSize={170}
+                src='./hotel21.png'
+              />
             </Flex>
             <Heading align='center' fontSize='2xl' pt={[0, 2, 4]}>
               Hotel 21 - ALger
