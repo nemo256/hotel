@@ -68,10 +68,10 @@ export default function BasicStatistics() {
           color='primary'
           fontSize='2xl'
           align='center'
-          my={[8, 10, 12]}
+          my={[12, 16, 16]}
           mx={6}
         >
-          Vous êtes dans les bonnes mains.
+          Vous êtes entre de bonnes mains.
         </Text>
         <SimpleGrid columns={[1, 1, 3, 3, 3, 3]} spacing={[5, 8]}>
           <StatsCard
