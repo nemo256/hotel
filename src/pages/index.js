@@ -9,8 +9,6 @@ export default function Index() {
     <Stack
       mt={90}
       maxW='100%'
-      direction='column'
-      zIndex={1}
       justify='center'
       align='center'
     >
