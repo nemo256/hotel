@@ -73,7 +73,7 @@ export default function Testimonials() {
             {testimonial.id == 3 && <Center />}
             <GridItem key={index}  h='100%' colSpan={2}>
               <Box 
-                  mt={testimonial.id == 3 ? [-20, 0] : 0}
+                mt={testimonial.id == 3 ? [-20, 0] : 0}
                 py={4}
                 px={6}
                 bg='secondary'
