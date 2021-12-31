@@ -1,15 +1,15 @@
-import { Stack } from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
 import Card from '../components/contacter-nous/Card'
 
 export default function Index() {
   return (
-    <Stack
+    <Container
       mt={16}
-      maxW='100%'
+      maxW='1200px'
       justify='center'
       align='center'
     >
       <Card />
-    </Stack>
+    </Container>
   )
 }
