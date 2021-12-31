@@ -79,32 +79,6 @@ export default function Services() {
            content: 'Bienvenue à Alger bienvenue à l’hôtel 21. Au cœur d’Alger, vivez un séjour incomparable et authentique, Moderne, chaleureux et raffiné. l’hôtel 21 est un havre de détente. Niché dans les hauteurs algéroises d’où la baie d’Alger s’offre à vous dans un panorama unique et époustouflant, découvrez un large éventail d’activités et vivez une expérience hôtelière totale.'
         }}
       </Header>
-      {/* <Center h={300} mt={[16, 12, 0]} mb={[16, 12, 0]} mx={2}> */}
-      {/*   <Stack */} 
-      {/*     spacing={4} */} 
-      {/*     mr={5} */} 
-      {/*     ml={5} */}
-      {/*   > */}
-      {/*     <Heading color='primary' size='xl' mb={2} align='center'> */}
-      {/*       Services */}
-      {/*     </Heading> */}
-      {/*     <Text as='i' color='primary' fontSize='2xl' align='center'> */}
-      {/*      Comfort, Elegence, Expérience et des émotions... */}
-      {/*     </Text> */}
-      {/*     <Text */} 
-      {/*       px={[0, 4, 8, 20, 40, 60]} */}
-      {/*       noOfLines={[8, 4, 3]} */} 
-      {/*       align='center' */}
-      {/*       ml={[16, 12, 0]} */}
-      {/*       mb={5} */}
-      {/*     > */}
-      {/*       Bienvenue à Alger bienvenue à l’hôtel 21. */}
-      {/*       Au cœur d’Alger, vivez un séjour incomparable et authentique... */}
-      {/*       Moderne, chaleureux et raffiné, l’hôtel 21 est un havre de détente. */}
-      {/*       Niché dans les hauteurs algéroises d’où la baie d’Alger s’offre à vous dans un panorama unique et époustouflant, découvrez un large éventail d’activités et vivez une expérience hôtelière totale. */} 
-      {/*     </Text> */}
-      {/*   </Stack> */}
-      {/* </Center> */}
       <Center>           
         <Grid
           mr={10} 

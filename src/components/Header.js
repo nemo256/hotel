@@ -26,7 +26,7 @@ export default function Header({ children, ...props }) {
       </Heading>
       <Text 
         px={[0, 4, 8, 20, 40, 60]}
-        noOfLines={[10, 5, 3]} 
+        noOfLines={[10, 5, 4]} 
         color='gray.600'
         align='center'
       >

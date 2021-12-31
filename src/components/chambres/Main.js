@@ -45,7 +45,7 @@ export default function Main() {
 
   return (
     <>
-      <Header>
+      <Header h={[280, 220]}>
         {{
            title: 'Chambres',
            heading: 'Içi, vous êtes le patron...',
@@ -68,9 +68,10 @@ export default function Main() {
             strength={380}
           >
             <Center 
-              px={[12, 220, 340, 400, 500, 605]}
+              px={[12, 120, 160, 200, 220, 240]}
               py={[16, 160, 200, 260, 280, 280]}
-              h={[260, 340, 480, 550, 600, 600]}
+              h={[200, 240, 260, 280, 320, 360]}
+              w={[370, 640, 800, 1050, 1450, 1600]}
               opacity={0.67}
             >
               <Text 
