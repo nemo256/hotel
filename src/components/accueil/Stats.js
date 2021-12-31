@@ -61,7 +61,7 @@ function StatsCard(props) {
 export default function BasicStatistics() {
   return (
     <Center>
-      <Box maxW='7xl' mx='auto' pt={5} px={[2, 12, 17]}>
+      <Box maxW='7xl' mx='auto' pt={5} px={[2, 6, 12, 17]}>
         <Text 
           as='i'
           noOfLines={2} 
@@ -73,7 +73,7 @@ export default function BasicStatistics() {
         >
           Vous êtes dans les bonnes mains.
         </Text>
-        <SimpleGrid columns={[1, 3, 3, 3, 3, 3]} spacing={[5, 8]}>
+        <SimpleGrid columns={[1, 1, 3, 3, 3, 3]} spacing={[5, 8]}>
           <StatsCard
             title='Staff'
             stat='621'
