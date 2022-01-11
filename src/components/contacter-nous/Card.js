@@ -41,8 +41,9 @@ export default function Card() {
         mt={[12, 10, 8, 0, 0, 0]}
         mx={[2, 4, 4, 4, 4, 4]}
         direction={['column-reverse', 'column-reverse', 'row', 'row', 'row', 'row']}
-        border='1px'
+        border='0px'
         borderRadius='none'
+        boxShadow='xl'
       >
         <Flex
           p={8}

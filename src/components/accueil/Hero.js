@@ -81,7 +81,7 @@ export default function Hero() {
         <IconButton
           aria-label='left-arrow'
           position='relative'
-          color='white'
+          color='black'
           bg='none'
           top={[345, 225, 250]}
           px={[4, 6, 6, 6, 6, 6]}
@@ -105,7 +105,7 @@ export default function Hero() {
         <IconButton
           aria-label='right-arrow'
           position='relative'
-          color='white'
+          color='black'
           bg='none'
           top={[345, 225, 250]}
           px={[4, 6, 6, 6, 6, 6]}
@@ -151,7 +151,7 @@ export default function Hero() {
                 >
                   <Heading 
                     as='i' 
-                    color='white'
+                    color='black'
                     fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
                     _hover={{
                       color: 'primary'
@@ -164,7 +164,7 @@ export default function Hero() {
                   </Heading>
                   <Text
                     as='i'
-                    color='white'
+                    color='black'
                     fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
                   >
                     {card.text}

@@ -32,7 +32,7 @@ function StatsCard(props) {
       _hover={{
         transform: 'scale(1.09)',
         transition: 'all .3s ease',
-        bgColor: 'whiteAlpha.200'
+        bg: 'whiteAlpha.200'
       }}
     >
       <Flex>
