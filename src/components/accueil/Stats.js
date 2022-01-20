@@ -24,16 +24,18 @@ function StatsCard(props) {
     <Stat
       px={[2, 6]}
       py={5}
-      mx={[4, 0]}
+      mx={[4, 2]}
       mb={[2, 0]}
-      shadow='xl'
-      border='1px'
-      borderRadius='none'
+      bgColor='secondary'
+      borderRadius='sm'
       _hover={{
         transform: 'scale(1.09)',
         transition: 'all .3s ease',
-        bg: 'whiteAlpha.200'
+        bg: 'whiteAlpha.200',
+        color: 'primary',
+        cursor:'pointer'
       }}
+      
     >
       <Flex>
         <Box pr={[0, 8, 16]} pl={[2, 1, 0]}>

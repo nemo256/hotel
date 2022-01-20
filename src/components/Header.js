@@ -28,7 +28,6 @@ export default function Header({ children, ...props }) {
         {children.title}
       </Text>
       <Text 
-        as='i'
         color='primary'
         fontSize='3xl'
         fontWeight='bold'
@@ -39,6 +38,7 @@ export default function Header({ children, ...props }) {
         {children.heading}
       </Text>
       <Text 
+        as='i'
         px={[0, 4, 8, 20, 40, 60]}
         noOfLines={[10, 8, 4]} 
         color='gray.600'

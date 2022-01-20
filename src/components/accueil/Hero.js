@@ -41,12 +41,12 @@ export default function Hero() {
     {
       title: 'Hotel 21 Alger',
       text: 'En toute sécurité',
-      image: './room-1.jpeg',
+      image: './defaultBcg.jpg',
     },
     {
       title: 'Hotel 21 Alger',
       text: 'En toute sécurité',
-      image: './room-2.jpeg',
+      image: './room-9.jpeg',
     },
     {
       title: 'Hotel 21 Alger',
@@ -81,7 +81,7 @@ export default function Hero() {
         <IconButton
           aria-label='left-arrow'
           position='relative'
-          color='black'
+          color='white'
           bg='none'
           top={[345, 225, 250]}
           px={[4, 6, 6, 6, 6, 6]}
@@ -105,7 +105,7 @@ export default function Hero() {
         <IconButton
           aria-label='right-arrow'
           position='relative'
-          color='black'
+          color='white'
           bg='none'
           top={[345, 225, 250]}
           px={[4, 6, 6, 6, 6, 6]}
@@ -144,27 +144,34 @@ export default function Hero() {
               position='relative'
               top={[185, 200, 225]}
               transform='translate(0, -50%)'
+              background='rgba(0, 0, 0, 0.35)'
+              padding='12rem 1rem'
+              text-align='center'
+              text-transform='capitalize'
+              letter-spacing='1px'
+              backgroundPosition='center'
+              backgroundRepeat='no-repeat'
             >
               <Zoom cascade>
                 <Stack 
-                  align='center'
+                  alignItems='center'
                 >
                   <Heading 
                     as='i' 
-                    color='black'
+                    color='gray.100'
                     fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
                     _hover={{
-                      color: 'primary'
+                      color: 'white'
                     }}
                     _active={{
-                      color: 'primary'
+                      color: 'white'
                     }}
                   >
                     {card.title}
                   </Heading>
                   <Text
                     as='i'
-                    color='black'
+                    color='gray.100'
                     fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
                   >
                     {card.text}

@@ -93,7 +93,7 @@ export default function Services() {
             <Box
               maxW='sm'
               overflow='hidden'
-              borderRadius='none' 
+              borderRadius='sm' 
               bgColor='secondary' 
             >
               <Center mt={7} mb={2}>   
